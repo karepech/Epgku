@@ -1,4 +1,4 @@
-name: Update EPG WIB
+name: Update EPG WIB SPORTS
 
 on:
   schedule:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -18,18 +18,18 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate EPG WIB
-        run: python convert_epg_wib.py
+      - name: Generate EPG WIB SPORTS
+        run: python convert_epg_wib_sports.py
 
       - name: Commit & Push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add epg_wib.xml
-          git commit -m "Auto update EPG WIB" || echo "No changes"
+          git add epg_wib_sports.xml
+          git commit -m "Auto update EPG WIB SPORTS" || echo "No changes"
           git push
