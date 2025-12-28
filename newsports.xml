@@ -1,0 +1,4610 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv date="20251228080003 +0000" generator-info-name="epg.pw" generator-info-url="https://epg.pw" source-info-name="FREE EPG" source-info-url="https://epg.pw/xmltv/epg.xml">
+  <channel id="2300">
+    <display-name lang="MY">Golf Channel HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609081039584517_43.png"/>
+  </channel>
+  <channel id="2442">
+    <display-name lang="MY">Astro Cricket HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609081104732934_90.png"/>
+  </channel>
+  <channel id="2580">
+    <display-name lang="MY">beIN Sports HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609081130229297_57.png"/>
+  </channel>
+  <channel id="3018">
+    <display-name lang="MY">Astro SuperSport UHD 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609082958895536_76.png"/>
+  </channel>
+  <channel id="3118">
+    <display-name lang="MY">beIN Sports 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png"/>
+  </channel>
+  <channel id="3625">
+    <display-name lang="MY">Premier Sports</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png"/>
+  </channel>
+  <channel id="4146">
+    <display-name lang="MY">beIN Sports 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png"/>
+  </channel>
+  <channel id="5734">
+    <display-name lang="RU">Xsport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020408934258_25.png"/>
+  </channel>
+  <channel id="5750">
+    <display-name lang="RU">SportKlub</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020500679626_98.png"/>
+  </channel>
+  <channel id="5778">
+    <display-name lang="RU">TVP Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020619329228_10.png"/>
+  </channel>
+  <channel id="5791">
+    <display-name lang="RU">Sky Sports Football HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020657818530_33.png"/>
+  </channel>
+  <channel id="5800">
+    <display-name lang="RU">BT Sport 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020734881671_73.png"/>
+  </channel>
+  <channel id="5816">
+    <display-name lang="RU">Super-Tennis</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020844818469_35.png"/>
+  </channel>
+  <channel id="5828">
+    <display-name lang="RU">CANAL+ Sport 1 PL</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020919846125_54.png"/>
+  </channel>
+  <channel id="5829">
+    <display-name lang="RU">CANAL+ Sport 2 PL</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020922792573_94.png"/>
+  </channel>
+  <channel id="5830">
+    <display-name lang="RU">CANAL+ Sport 3 PL</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020925632920_57.png"/>
+  </channel>
+  <channel id="5831">
+    <display-name lang="RU">CANAL+ Sport 4 PL</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020928536679_79.png"/>
+  </channel>
+  <channel id="5832">
+    <display-name lang="RU">CANAL+ Sport 5 PL</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020931239196_42.png"/>
+  </channel>
+  <channel id="5833">
+    <display-name lang="RU">TV3 Sport Open</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020933923808_16.png"/>
+  </channel>
+  <channel id="5862">
+    <display-name lang="RU">DIGI Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021110732201_71.png"/>
+  </channel>
+  <channel id="5864">
+    <display-name lang="RU">DIGI Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021116241739_31.png"/>
+  </channel>
+  <channel id="5866">
+    <display-name lang="RU">DIGI Sport 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021122102170_36.png"/>
+  </channel>
+  <channel id="6003">
+    <display-name lang="RU">Polsat Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021928330931_90.png"/>
+  </channel>
+  <channel id="6035">
+    <display-name lang="RU">Trace Urban</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022113766538_12.png"/>
+  </channel>
+  <channel id="6060">
+    <display-name lang="RU">MAX Sport 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022253774759_68.png"/>
+  </channel>
+  <channel id="6061">
+    <display-name lang="RU">MAX Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022256373842_82.png"/>
+  </channel>
+  <channel id="6062">
+    <display-name lang="RU">MAX Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022258970501_67.png"/>
+  </channel>
+  <channel id="6063">
+    <display-name lang="RU">MAX Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022301600711_53.png"/>
+  </channel>
+  <channel id="6085">
+    <display-name lang="RU">Eurosport 1 PL</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022438488106_72.png"/>
+  </channel>
+  <channel id="6086">
+    <display-name lang="RU">Sport 2 Baltic</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022444162489_75.png"/>
+  </channel>
+  <channel id="6254">
+    <display-name lang="RU">Sky Sports Cricket</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023337631688_49.png"/>
+  </channel>
+  <channel id="6263">
+    <display-name lang="RU">Nova Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023415410504_21.png"/>
+  </channel>
+  <channel id="6268">
+    <display-name lang="RU">Polsat Sport Fight</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023427277758_13.png"/>
+  </channel>
+  <channel id="6317">
+    <display-name lang="RU">Sky Sports F1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023655683681_51.png"/>
+  </channel>
+  <channel id="6336">
+    <display-name lang="RU">Eleven Sports 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032528649304_89.png"/>
+  </channel>
+  <channel id="6338">
+    <display-name lang="RU">Eleven Sports 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023759225800_63.png"/>
+  </channel>
+  <channel id="6339">
+    <display-name lang="RU">Eleven Sports 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023801965565_64.png"/>
+  </channel>
+  <channel id="6340">
+    <display-name lang="RU">Eleven Sports 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023804679905_74.png"/>
+  </channel>
+  <channel id="6355">
+    <display-name lang="RU">Eurosport 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023856637647_38.png"/>
+  </channel>
+  <channel id="6390">
+    <display-name lang="RU">GINX Esports TV</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032107386353_10.png"/>
+  </channel>
+  <channel id="6445">
+    <display-name lang="RU">Sky Sports Golf</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608024405003901_10.png"/>
+  </channel>
+  <channel id="6506">
+    <display-name lang="RU">DIGI Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608024735664425_20.png"/>
+  </channel>
+  <channel id="6507">
+    <display-name lang="RU">Sport 1 Baltic</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608024740898596_33.png"/>
+  </channel>
+  <channel id="6517">
+    <display-name lang="RU">Viju+ Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608024809950370_85.png"/>
+  </channel>
+  <channel id="6553">
+    <display-name lang="RU">Sky Sports Mix HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608025014891151_38.png"/>
+  </channel>
+  <channel id="6564">
+    <display-name lang="RU">Yes Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034646611719_39.png"/>
+  </channel>
+  <channel id="6578">
+    <display-name lang="RU">Yes Sport 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608025122952731_89.png"/>
+  </channel>
+  <channel id="6594">
+    <display-name lang="RU">Q Sport Extra</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608025221934557_71.png"/>
+  </channel>
+  <channel id="6605">
+    <display-name lang="RU">BCU Кинозал Premiere 1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608025258724856_93.png"/>
+  </channel>
+  <channel id="6626">
+    <display-name lang="RU">Sky Sports News HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031018446640_45.png"/>
+  </channel>
+  <channel id="6681">
+    <display-name lang="RU">Sky Sports Racing HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608025720979323_35.png"/>
+  </channel>
+  <channel id="6765">
+    <display-name lang="RU">KAZsport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030154929835_87.png"/>
+  </channel>
+  <channel id="6819">
+    <display-name lang="RU">Eurosport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030514454538_39.png"/>
+  </channel>
+  <channel id="6828">
+    <display-name lang="RU">Prima Sport 4 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030553929147_42.png"/>
+  </channel>
+  <channel id="6829">
+    <display-name lang="RU">Prima Sport 5 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030556581906_92.png"/>
+  </channel>
+  <channel id="6830">
+    <display-name lang="RU">Prima Sport 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030559197209_89.png"/>
+  </channel>
+  <channel id="6831">
+    <display-name lang="RU">Prima Sport 3 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021841183237_85.png"/>
+  </channel>
+  <channel id="6832">
+    <display-name lang="RU">Prima Sport 1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030604926594_67.png"/>
+  </channel>
+  <channel id="6889">
+    <display-name lang="RU">Q Sport Казахстан</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030857747839_89.png"/>
+  </channel>
+  <channel id="6948">
+    <display-name lang="RU">Sportdigital Fussball HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031231340175_75.png"/>
+  </channel>
+  <channel id="6958">
+    <display-name lang="RU">Sky Sports Premier League HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031258827840_98.png"/>
+  </channel>
+  <channel id="7049">
+    <display-name lang="RU">Eurosport 2 PL</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031816864300_64.png"/>
+  </channel>
+  <channel id="7135">
+    <display-name lang="RU">Polsat Sport Premium 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032240026618_13.png"/>
+  </channel>
+  <channel id="7136">
+    <display-name lang="RU">Polsat Sport Premium 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032243202696_90.png"/>
+  </channel>
+  <channel id="7200">
+    <display-name lang="RU">BeIN Sports News</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032649799000_35.png"/>
+  </channel>
+  <channel id="7214">
+    <display-name lang="RU">Sky Sports Action</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032738263376_90.png"/>
+  </channel>
+  <channel id="7221">
+    <display-name lang="RU">Polsat Sport News</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032803652869_28.png"/>
+  </channel>
+  <channel id="7263">
+    <display-name lang="RU">Extreme sports</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608033037557117_39.png"/>
+  </channel>
+  <channel id="7352">
+    <display-name lang="RU">Polsat Cafe</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031027390619_65.png"/>
+  </channel>
+  <channel id="7370">
+    <display-name lang="RU">BeIN Sports 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608033634320537_16.png"/>
+  </channel>
+  <channel id="7401">
+    <display-name lang="RU">Nova Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608033836407407_34.png"/>
+  </channel>
+  <channel id="7447">
+    <display-name lang="RU">Diema Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034126096737_87.png"/>
+  </channel>
+  <channel id="7448">
+    <display-name lang="RU">Diema Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034128971207_82.png"/>
+  </channel>
+  <channel id="7449">
+    <display-name lang="RU">Diema Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034131829954_56.png"/>
+  </channel>
+  <channel id="7499">
+    <display-name lang="RU">VF Premiere</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034432344123_42.png"/>
+  </channel>
+  <channel id="7548">
+    <display-name lang="RU">Trace Sport Stars</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034657368498_86.png"/>
+  </channel>
+  <channel id="7612">
+    <display-name lang="RU">Nova Sport 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035020176071_95.png"/>
+  </channel>
+  <channel id="7631">
+    <display-name lang="RU">BT Sport 1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040051318310_94.png"/>
+  </channel>
+  <channel id="7633">
+    <display-name lang="RU">BT Sport 3 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040056707241_87.png"/>
+  </channel>
+  <channel id="7673">
+    <display-name lang="RU">Sky Sports Main Event HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035329906090_87.png"/>
+  </channel>
+  <channel id="7747">
+    <display-name lang="RU">Nova Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035739158784_19.png"/>
+  </channel>
+  <channel id="7757">
+    <display-name lang="RU">BeIN Sport 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035821579904_20.png"/>
+  </channel>
+  <channel id="7758">
+    <display-name lang="RU">BeIN Sport 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035824306612_61.png"/>
+  </channel>
+  <channel id="7759">
+    <display-name lang="RU">BeIN Sport 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035827052842_37.png"/>
+  </channel>
+  <channel id="7760">
+    <display-name lang="RU">BeIN Sport 7</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035829739118_79.png"/>
+  </channel>
+  <channel id="7761">
+    <display-name lang="RU">BeIN Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035832395868_24.png"/>
+  </channel>
+  <channel id="7762">
+    <display-name lang="RU">BeIN Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035835111492_92.png"/>
+  </channel>
+  <channel id="7763">
+    <display-name lang="RU">BeIN Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035837819238_70.png"/>
+  </channel>
+  <channel id="7794">
+    <display-name lang="RU">BT Sport 8 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040043399340_44.png"/>
+  </channel>
+  <channel id="7795">
+    <display-name lang="RU">BT Sport 9 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040045915606_78.png"/>
+  </channel>
+  <channel id="7798">
+    <display-name lang="RU">BT Sport 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040053994518_16.png"/>
+  </channel>
+  <channel id="7800">
+    <display-name lang="RU">BT Sport 4 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040059404914_57.png"/>
+  </channel>
+  <channel id="7802">
+    <display-name lang="RU">BT Sport 6 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040104699288_22.png"/>
+  </channel>
+  <channel id="7803">
+    <display-name lang="RU">BT Sport 7 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035145276260_62.png"/>
+  </channel>
+  <channel id="7833">
+    <display-name lang="RU">Xsport+</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040240587726_68.png"/>
+  </channel>
+  <channel id="7835">
+    <display-name lang="RU">Polsat Sport Extra</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040248925277_22.png"/>
+  </channel>
+  <channel id="9122">
+    <display-name lang="GB">SkyPremiereHD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="9165">
+    <display-name lang="GB">SkySp Golf HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="9181">
+    <display-name lang="GB">SkySpCricket HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="9293">
+    <display-name lang="GB">SkySp Cricket</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="9375">
+    <display-name lang="GB">SkySp F1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="9405">
+    <display-name lang="GB">talkSPORT</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="9409">
+    <display-name lang="GB">SkySp F1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10634">
+    <display-name lang="DE">Sky Sport Tennis</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10645">
+    <display-name lang="DE">Sky Sport Golf</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10675">
+    <display-name lang="DE">Sky Sport Top Event</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10761">
+    <display-name lang="JP">J SPORTS 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10768">
+    <display-name lang="JP">J SPORTS 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10772">
+    <display-name lang="JP">GAORA SPORTS HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10781">
+    <display-name lang="DE">SKY Sport F1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10785">
+    <display-name lang="DE">Sky Sport Mix</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10822">
+    <display-name lang="JP">J SPORTS 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="10829">
+    <display-name lang="JP">J SPORTS 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12022">
+    <display-name lang="GB">SkySp Golf HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12026">
+    <display-name lang="GB">SkyPremiereHD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12050">
+    <display-name lang="GB">BT Sport 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12190">
+    <display-name lang="GB">SkySp F1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12205">
+    <display-name lang="GB">talkSPORT</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12217">
+    <display-name lang="GB">BT Sport 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12233">
+    <display-name lang="GB">BT Sport 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12235">
+    <display-name lang="GB">BT Sport 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12268">
+    <display-name lang="GB">BT Sport 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12309">
+    <display-name lang="GB">BT Sport 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12312">
+    <display-name lang="GB">BT Sport 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12313">
+    <display-name lang="GB">BT Sport 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="12434">
+    <display-name lang="GB">SkySpCricket HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="44879">
+    <display-name lang="RU">Eurosport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021504343347_50.png"/>
+  </channel>
+  <channel id="45664">
+    <display-name lang="RU">5Sport Gold</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030438405081_14.png"/>
+  </channel>
+  <channel id="45669">
+    <display-name lang="RU">Viju+ Premiere</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031056385445_39.png"/>
+  </channel>
+  <channel id="45686">
+    <display-name lang="RU">5Sport Plus</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034429338823_37.png"/>
+  </channel>
+  <channel id="45694">
+    <display-name lang="RU">5Sport Stars</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035755702844_71.png"/>
+  </channel>
+  <channel id="48630">
+    <display-name lang="MY">W-Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/10/20240610061834905582_46.png"/>
+  </channel>
+  <channel id="51580">
+    <display-name lang="RU">BeIN Sports FTA</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608023701663854_56.png"/>
+  </channel>
+  <channel id="54815">
+    <display-name lang="FR">RMC Sport 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="54963">
+    <display-name lang="FR">beIN SPORTS 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55764">
+    <display-name lang="FR">RMC Sport Live 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55773">
+    <display-name lang="FR">beIN SPORTS 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55820">
+    <display-name lang="FR">Trace Toca</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55920">
+    <display-name lang="FR">beIN SPORTS MAX 7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55941">
+    <display-name lang="FR">Sport en France</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55944">
+    <display-name lang="FR">Trace Urban</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55982">
+    <display-name lang="FR">beIN SPORTS MAX 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="55983">
+    <display-name lang="FR">beIN SPORTS MAX 9</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="56043">
+    <display-name lang="FR">TF1 Séries-Films</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="59376">
+    <display-name lang="RU">BT Sports 10 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034319112711_86.png"/>
+  </channel>
+  <channel id="59386">
+    <display-name lang="RU">BT Sport 5 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608040102177290_18.png"/>
+  </channel>
+  <channel id="62227">
+    <display-name lang="RU">Setanta Sports 1 KZ</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608020729626698_21.png"/>
+  </channel>
+  <channel id="62234">
+    <display-name lang="RU">Setanta Sports 2 KZ</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022946859614_87.png"/>
+  </channel>
+  <channel id="67502">
+    <display-name lang="RU">Eleven Sports 2 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021624983053_52.png"/>
+  </channel>
+  <channel id="67504">
+    <display-name lang="RU">Eleven Sports 1 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021749422761_90.png"/>
+  </channel>
+  <channel id="68288">
+    <display-name lang="RU">Viasat Sport HD SE</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022844384055_91.png"/>
+  </channel>
+  <channel id="68308">
+    <display-name lang="RU">V Sport Motor</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030956091771_49.png"/>
+  </channel>
+  <channel id="68311">
+    <display-name lang="RU">V Sport Golf</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031304768682_85.png"/>
+  </channel>
+  <channel id="76619">
+    <display-name lang="DE">Eurosport 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76652">
+    <display-name lang="DE">Trace TV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76659">
+    <display-name lang="DE">SPORT1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76690">
+    <display-name lang="DE">EXTREME SPORTS</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76707">
+    <display-name lang="DE">eSports1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76733">
+    <display-name lang="DE">Sky Sport News</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76744">
+    <display-name lang="DE">Eurosport 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76754">
+    <display-name lang="DE">SPORT1+</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76756">
+    <display-name lang="DE">ORF SPORT +</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76765">
+    <display-name lang="DE">More than Sports TV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="76785">
+    <display-name lang="DE">Canal+ Sport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="78599">
+    <display-name lang="RU">5Sport 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608032319157910_40.png"/>
+  </channel>
+  <channel id="85439">
+    <display-name lang="RU">TV3 Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608022949485287_62.png"/>
+  </channel>
+  <channel id="85469">
+    <display-name lang="RU">TV3 Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030805157931_70.png"/>
+  </channel>
+  <channel id="93994">
+    <display-name lang="RU">BeIN Sports 2 EN</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021229772550_33.png"/>
+  </channel>
+  <channel id="94061">
+    <display-name lang="RU">BeIN Sports 1 EN</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034714416642_23.png"/>
+  </channel>
+  <channel id="94066">
+    <display-name lang="RU">Fresh Premiere</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035305726152_58.png"/>
+  </channel>
+  <channel id="128532">
+    <display-name lang="RU">DiviSport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608030642360704_48.png"/>
+  </channel>
+  <channel id="132078">
+    <display-name lang="RU">BeIN Sports NBA</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034753701109_36.png"/>
+  </channel>
+  <channel id="171897">
+    <display-name lang="ID">Sportstars 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171902">
+    <display-name lang="ID">Fight Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171910">
+    <display-name lang="ID">Sportstars 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171919">
+    <display-name lang="ID">Sportstars</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171939">
+    <display-name lang="ID">Soccer Channel HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171957">
+    <display-name lang="ID">Soccer Channel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171965">
+    <display-name lang="ID">Sportstars 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171985">
+    <display-name lang="ID">Sportstars 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="171988">
+    <display-name lang="ID">Sportstars HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="172008">
+    <display-name lang="ID">Sportstars 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="178685">
+    <display-name lang="RU">BeIN Sports AFC</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608031638098978_97.png"/>
+  </channel>
+  <channel id="182674">
+    <display-name lang="DE">DF1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="212145">
+    <display-name lang="GB">SkySp Tennis HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="212817">
+    <display-name lang="DE">Sky Sport Bundesliga 10</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="212821">
+    <display-name lang="DE">Sky Sport Bundesliga</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="212845">
+    <display-name lang="DE">Sky Sport Bundesliga 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="219100">
+    <display-name lang="GB">Premier Sports 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="219104">
+    <display-name lang="GB">Premier Sports 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="220391">
+    <display-name lang="RU">Sport+ Qazaqstan</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035710230860_34.png"/>
+  </channel>
+  <channel id="222007">
+    <display-name lang="GB">SkySp Tennis HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="247795">
+    <display-name lang="RU">Setanta Sports</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608034734563662_89.png"/>
+  </channel>
+  <channel id="263913">
+    <display-name lang="RU">Q Football</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608021847015484_24.png"/>
+  </channel>
+  <channel id="322490">
+    <display-name lang="PH">Onesports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="322515">
+    <display-name lang="PH">Onesportsplus Hd</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="322516">
+    <display-name lang="PH">Premier Tennishd</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="322530">
+    <display-name lang="PH">Tap Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="325011">
+    <display-name lang="RU">Setanta Sports+</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608033432248896_89.png"/>
+  </channel>
+  <channel id="357063">
+    <display-name lang="RU">Sky Sports Box Office</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/08/20240608035942313790_89.png"/>
+  </channel>
+  <channel id="365940">
+    <display-name lang="JP">SPORTS 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="365941">
+    <display-name lang="JP">SPORTS 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="365942">
+    <display-name lang="JP">SPORTS 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="365943">
+    <display-name lang="JP">SPORTS 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="367181">
+    <display-name lang="RU">BOX Premiere+ 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609021423277162_39.png"/>
+  </channel>
+  <channel id="367192">
+    <display-name lang="RU">BOX SR Sport 2 Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/09/20240609021616995911_29.png"/>
+  </channel>
+  <channel id="369601">
+    <display-name lang="MY">beIN Sports 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369662">
+    <display-name lang="MY">beIN Sports 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369717">
+    <display-name lang="SG">mio Sports 2 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369737">
+    <display-name lang="SG">TRACE Sports Stars HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369741">
+    <display-name lang="SG">beIN SPORTS 2 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369750">
+    <display-name lang="SG">beIN SPORTS (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369764">
+    <display-name lang="SG">beIN SPORTS 4 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369773">
+    <display-name lang="SG">mio Sports (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369775">
+    <display-name lang="SG">Hub Premier 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369784">
+    <display-name lang="SG">Hub Premier 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369790">
+    <display-name lang="SG">Premier Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369793">
+    <display-name lang="SG">Hub Premier 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369802">
+    <display-name lang="SG">mio Sports 3 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369817">
+    <display-name lang="SG">beIN SPORTS 3 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369822">
+    <display-name lang="SG">Hub Premier 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369827">
+    <display-name lang="SG">Fight Sports (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="369843">
+    <display-name lang="SG">beIN SPORTS 5 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="370195">
+    <display-name lang="TW">TRACE Urban</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/12/20240612111114202855_12.png"/>
+  </channel>
+  <channel id="370207">
+    <display-name lang="TW">TRACE Sport Stars</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/12/20240612111234551088_67.png"/>
+  </channel>
+  <channel id="370211">
+    <display-name lang="TW">GINX Esports TV</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/12/20240612111301621203_17.png"/>
+  </channel>
+  <channel id="372290">
+    <display-name lang="RU">BeIN Sport 3 FR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/06/23/20240623020505061658_80.png"/>
+  </channel>
+  <channel id="374489">
+    <display-name lang="PH">PREMIERSPORTS2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="374694">
+    <display-name lang="RU">Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/07/05/20240705021020002099_66.png"/>
+  </channel>
+  <channel id="378735">
+    <display-name lang="RU">BCU Premiere Ultra 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/07/29/20240729020428094586_62.png"/>
+  </channel>
+  <channel id="381848">
+    <display-name lang="RU">Arena Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021044099435_15.png"/>
+  </channel>
+  <channel id="381849">
+    <display-name lang="RU">Arena Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021046709598_90.png"/>
+  </channel>
+  <channel id="381850">
+    <display-name lang="RU">Arena Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021055356753_96.png"/>
+  </channel>
+  <channel id="381851">
+    <display-name lang="RU">Arena Sport 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021057969988_21.png"/>
+  </channel>
+  <channel id="381852">
+    <display-name lang="RU">Arena Sport 7</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021100555451_33.png"/>
+  </channel>
+  <channel id="381853">
+    <display-name lang="RU">Arena Sport 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021103161595_32.png"/>
+  </channel>
+  <channel id="381854">
+    <display-name lang="RU">Arena Sport 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021105725497_14.png"/>
+  </channel>
+  <channel id="381855">
+    <display-name lang="RU">Arena Sport 8</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/17/20240817021108569517_20.png"/>
+  </channel>
+  <channel id="382590">
+    <display-name lang="RU">BCU Premiere HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/08/20/20240820021936370610_85.png"/>
+  </channel>
+  <channel id="384597">
+    <display-name lang="RU">BOX SR Sport 3 Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/03/20240903021406732378_81.png"/>
+  </channel>
+  <channel id="384598">
+    <display-name lang="RU">BOX SR Sport 4 Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/03/20240903021440501468_20.png"/>
+  </channel>
+  <channel id="387770">
+    <display-name lang="RU">TV3 Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/11/20240911022027094263_65.png"/>
+  </channel>
+  <channel id="389932">
+    <display-name lang="RU">Arena Sport 9</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/22/20240922021701751407_49.png"/>
+  </channel>
+  <channel id="389938">
+    <display-name lang="RU">Arena Sport 10</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/22/20240922022136260136_96.png"/>
+  </channel>
+  <channel id="390178">
+    <display-name lang="RU">Sport TV 1 Slovenia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/22/20240922021128677214_82.png"/>
+  </channel>
+  <channel id="390181">
+    <display-name lang="RU">Sport TV 2 Slovenia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/22/20240922021227018967_94.png"/>
+  </channel>
+  <channel id="390191">
+    <display-name lang="RU">Sport TV 3 Slovenia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/22/20240922022155030539_54.png"/>
+  </channel>
+  <channel id="390779">
+    <display-name lang="RU">BOX SR Sport Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/24/20240924023646661799_50.png"/>
+  </channel>
+  <channel id="391802">
+    <display-name lang="RU">TVR Sport RO</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/04/20241104021350632526_13.png"/>
+  </channel>
+  <channel id="392143">
+    <display-name lang="RU">Arena Sport 2 Slovenia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930020657643965_22.png"/>
+  </channel>
+  <channel id="392146">
+    <display-name lang="RU">Arena Sport 1 Slovenia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930020801082420_11.png"/>
+  </channel>
+  <channel id="392147">
+    <display-name lang="RU">Nova Sport 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/11/20241111020746625186_91.png"/>
+  </channel>
+  <channel id="392148">
+    <display-name lang="RU">Arena Sport 4 Slovenia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930020849526365_50.png"/>
+  </channel>
+  <channel id="392154">
+    <display-name lang="RU">Arena Sport 3 Slovenia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930021242784769_92.png"/>
+  </channel>
+  <channel id="392161">
+    <display-name lang="RU">Nova Sport BG</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930021741511834_10.png"/>
+  </channel>
+  <channel id="392164">
+    <display-name lang="RU">Nova Sport 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/11/20241111021758068422_34.png"/>
+  </channel>
+  <channel id="392165">
+    <display-name lang="RU">RAI Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028021809086779_21.png"/>
+  </channel>
+  <channel id="392298">
+    <display-name lang="RU">Arena Sport 5 HR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930020449034772_84.png"/>
+  </channel>
+  <channel id="392303">
+    <display-name lang="RU">Arena Sport 1 HR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930020853129626_35.png"/>
+  </channel>
+  <channel id="392305">
+    <display-name lang="RU">Arena Sport 2 HR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930020915077572_54.png"/>
+  </channel>
+  <channel id="392311">
+    <display-name lang="RU">Arena Sport 4 HR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930021345406143_64.png"/>
+  </channel>
+  <channel id="392313">
+    <display-name lang="RU">RTVS Sport SK</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930021528369446_38.png"/>
+  </channel>
+  <channel id="392317">
+    <display-name lang="RU">Arena Sport 3 HR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930021803362458_71.png"/>
+  </channel>
+  <channel id="392319">
+    <display-name lang="RU">Auto Moto Sport Channel DE</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/09/30/20240930022056140260_10.png"/>
+  </channel>
+  <channel id="393926">
+    <display-name lang="RU">Match4 HU</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028020800182107_23.png"/>
+  </channel>
+  <channel id="393930">
+    <display-name lang="RU">Sport 1 HU</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028021007652848_55.png"/>
+  </channel>
+  <channel id="393942">
+    <display-name lang="RU">M4 Sport HU</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028022059057466_94.png"/>
+  </channel>
+  <channel id="397396">
+    <display-name lang="MY">Astro Premier League</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png"/>
+  </channel>
+  <channel id="397397">
+    <display-name lang="MY">Astro Premier League 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png"/>
+  </channel>
+  <channel id="397399">
+    <display-name lang="MY">Astro Football</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png"/>
+  </channel>
+  <channel id="397400">
+    <display-name lang="MY">Astro Badminton</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png"/>
+  </channel>
+  <channel id="397402">
+    <display-name lang="MY">Astro Sports Plus</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png"/>
+  </channel>
+  <channel id="397404">
+    <display-name lang="RU">Sport TV 4 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028020406377314_42.png"/>
+  </channel>
+  <channel id="397414">
+    <display-name lang="RU">Sportdigital Fussball 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028021056664847_85.png"/>
+  </channel>
+  <channel id="397417">
+    <display-name lang="RU">Sport TV 6 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028021205439596_13.png"/>
+  </channel>
+  <channel id="397418">
+    <display-name lang="RU">Sport TV 1 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028021223605133_95.png"/>
+  </channel>
+  <channel id="397419">
+    <display-name lang="RU">Sport TV 3 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028021419641394_80.png"/>
+  </channel>
+  <channel id="397424">
+    <display-name lang="RU">Sport TV 2 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/10/28/20241028021858312260_67.png"/>
+  </channel>
+  <channel id="399482">
+    <display-name lang="MY">beIN SPORTS 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399486">
+    <display-name lang="MY">Astro Badminton</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399489">
+    <display-name lang="MY">Golf Channel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399491">
+    <display-name lang="MY">Astro Premier League 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399494">
+    <display-name lang="MY">W-Sport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399498">
+    <display-name lang="MY">Astro Football</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399506">
+    <display-name lang="MY">Premier Sports Rugby</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399510">
+    <display-name lang="MY">Astro Sports Plus</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399511">
+    <display-name lang="MY">Astro Premier League</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399518">
+    <display-name lang="MY">Astro Sports UHD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399520">
+    <display-name lang="MY">Astro Cricket</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="399720">
+    <display-name lang="PH">Cgnl Nba</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="400476">
+    <display-name lang="GB">TNT Sports Ultimate</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="400477">
+    <display-name lang="GB">TNT Sports 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="400478">
+    <display-name lang="GB">TNT Sports 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="400479">
+    <display-name lang="GB">TNT Sports 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="400480">
+    <display-name lang="GB">TNT Sports 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="401610">
+    <display-name lang="RU">Q Sport Киргизия</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/11/20241111021358767524_44.png"/>
+  </channel>
+  <channel id="403248">
+    <display-name lang="RU">Sky Sport 4 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/24/20241124021637940940_11.png"/>
+  </channel>
+  <channel id="403249">
+    <display-name lang="RU">Sky Sport 5 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/24/20241124021640755640_83.png"/>
+  </channel>
+  <channel id="403250">
+    <display-name lang="RU">Sky Sport 6 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/24/20241124021643164685_64.png"/>
+  </channel>
+  <channel id="403251">
+    <display-name lang="RU">Sky Sport 1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/24/20241124021646176654_12.png"/>
+  </channel>
+  <channel id="403252">
+    <display-name lang="RU">Sky Sport 3 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/24/20241124021648864835_30.png"/>
+  </channel>
+  <channel id="403255">
+    <display-name lang="RU">Sky Sport 7 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/24/20241124021949458443_54.png"/>
+  </channel>
+  <channel id="403256">
+    <display-name lang="RU">Sky Sport 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/24/20241124021954652856_78.png"/>
+  </channel>
+  <channel id="403290">
+    <display-name lang="RU">BOX Travel Premiere HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/25/20241125020643704465_90.png"/>
+  </channel>
+  <channel id="403427">
+    <display-name lang="RU">Arena Sport 6 HR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/11/28/20241128022430237756_40.png"/>
+  </channel>
+  <channel id="405554">
+    <display-name lang="RU">Sky Sports Tennis</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/06/20241206022116288515_92.png"/>
+  </channel>
+  <channel id="405669">
+    <display-name lang="RU">Sport TV 7 PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211020550349483_47.png"/>
+  </channel>
+  <channel id="405679">
+    <display-name lang="RU">Sports TV TR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211020922317197_69.png"/>
+  </channel>
+  <channel id="405715">
+    <display-name lang="RU">Sport TV+ PT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211022401800465_17.png"/>
+  </channel>
+  <channel id="406253">
+    <display-name lang="RU">Sport 1 CZ</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211020801051810_31.png"/>
+  </channel>
+  <channel id="406263">
+    <display-name lang="RU">NBA TV</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211021206637792_60.png"/>
+  </channel>
+  <channel id="406281">
+    <display-name lang="RU">ORF Sport +</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211021939916088_60.png"/>
+  </channel>
+  <channel id="406290">
+    <display-name lang="RU">Arena Sport 1 SK</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211022157652150_38.png"/>
+  </channel>
+  <channel id="406291">
+    <display-name lang="RU">Arena Sport 2 SK</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211022213669898_90.png"/>
+  </channel>
+  <channel id="406295">
+    <display-name lang="RU">Sport 2 CZ</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/11/20241211022507915937_94.png"/>
+  </channel>
+  <channel id="406526">
+    <display-name lang="RU">M+ Golf [ES]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216020656700083_53.png"/>
+  </channel>
+  <channel id="406527">
+    <display-name lang="RU">Sky Sport Premier League [NZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/13/20241213020929000761_68.png"/>
+  </channel>
+  <channel id="406530">
+    <display-name lang="RU">DAZN LALIGA 2 [ES]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216020732500184_38.png"/>
+  </channel>
+  <channel id="406533">
+    <display-name lang="RU">Sky Sport Select [NZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021123457868_11.png"/>
+  </channel>
+  <channel id="406540">
+    <display-name lang="RU">DAZN F1 [ES]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021157328772_64.png"/>
+  </channel>
+  <channel id="406566">
+    <display-name lang="RU">M+ LALIGA [ES]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021810335582_61.png"/>
+  </channel>
+  <channel id="406568">
+    <display-name lang="RU">M+ Liga de Campeones [ES]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021844540554_56.png"/>
+  </channel>
+  <channel id="406575">
+    <display-name lang="RU">Sky Sport 9 [NZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/13/20241213022423395417_36.png"/>
+  </channel>
+  <channel id="406588">
+    <display-name lang="RU">DAZN LALIGA [ES]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216022423418697_92.png"/>
+  </channel>
+  <channel id="406806">
+    <display-name lang="RU">Ziggo Sport 1 [NL]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216020701165226_58.png"/>
+  </channel>
+  <channel id="406807">
+    <display-name lang="RU">Ziggo Sport 3 [NL]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216020704247835_89.png"/>
+  </channel>
+  <channel id="406811">
+    <display-name lang="RU">Ziggo Sport 6 [NL]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021318225115_70.png"/>
+  </channel>
+  <channel id="406813">
+    <display-name lang="RU">Ziggo Sport 2 [NL]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021526719246_23.png"/>
+  </channel>
+  <channel id="406816">
+    <display-name lang="RU">Ziggo Sport 5 [NL]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021700657160_48.png"/>
+  </channel>
+  <channel id="406820">
+    <display-name lang="RU">Ziggo Sport 4 [NL]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/16/20241216021944418499_52.png"/>
+  </channel>
+  <channel id="406906">
+    <display-name lang="RU">Sky Sport 24 [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223020911077952_51.png"/>
+  </channel>
+  <channel id="406907">
+    <display-name lang="RU">Sky Sport Tennis [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021003657771_48.png"/>
+  </channel>
+  <channel id="406908">
+    <display-name lang="RU">Sky Sport F1 [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021009094921_46.png"/>
+  </channel>
+  <channel id="406910">
+    <display-name lang="RU">Sky Sport MotoGP [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021142483944_39.png"/>
+  </channel>
+  <channel id="406918">
+    <display-name lang="RU">Sky Sport Arena [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021604928490_67.png"/>
+  </channel>
+  <channel id="406922">
+    <display-name lang="RU">Sky Sport Golf [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021819376355_30.png"/>
+  </channel>
+  <channel id="407498">
+    <display-name lang="RU">Premier Sport 1 [SK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223020532365959_61.png"/>
+  </channel>
+  <channel id="407505">
+    <display-name lang="RU">Premier Sport 2 [SK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223020815133208_41.png"/>
+  </channel>
+  <channel id="407523">
+    <display-name lang="RU">Canal+ Sport [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021700346186_82.png"/>
+  </channel>
+  <channel id="407559">
+    <display-name lang="RU">V Sport 2 [NO]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223020608968978_65.png"/>
+  </channel>
+  <channel id="407563">
+    <display-name lang="RU">NBA TV [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223020839264746_12.png"/>
+  </channel>
+  <channel id="407564">
+    <display-name lang="RU">beIN Sport [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223020844830096_32.png"/>
+  </channel>
+  <channel id="407568">
+    <display-name lang="RU">NHL Network [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021131885211_65.png"/>
+  </channel>
+  <channel id="407574">
+    <display-name lang="RU">V Sport 1 [NO]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021444566875_41.png"/>
+  </channel>
+  <channel id="407577">
+    <display-name lang="RU">V Sport+ [NO]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021719123353_95.png"/>
+  </channel>
+  <channel id="407581">
+    <display-name lang="RU">V Sport 3 [NO]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/23/20241223021811830703_21.png"/>
+  </channel>
+  <channel id="407672">
+    <display-name lang="RU">Canal+ Sport 2 [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/30/20241230020838232415_79.png"/>
+  </channel>
+  <channel id="407799">
+    <display-name lang="RU">Sport Extra [RO]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/30/20241230021326478819_24.png"/>
+  </channel>
+  <channel id="408040">
+    <display-name lang="RU">Sport TV 5 [PT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2024/12/31/20241231021935900572_14.png"/>
+  </channel>
+  <channel id="408447">
+    <display-name lang="RU">Polsat Sport Premium 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/07/20250107022304383046_41.png"/>
+  </channel>
+  <channel id="408458">
+    <display-name lang="RU">Setanta Sports Premium [UA]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/22/20250122024447514044_36.png"/>
+  </channel>
+  <channel id="408605">
+    <display-name lang="RU">SNY: SportsNet New York [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214020521117421_49.png"/>
+  </channel>
+  <channel id="408613">
+    <display-name lang="RU">Premier Sports 1 [UK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214020739986975_47.png"/>
+  </channel>
+  <channel id="408617">
+    <display-name lang="RU">Tennis Channel [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/27/20250127021023117738_56.png"/>
+  </channel>
+  <channel id="408620">
+    <display-name lang="RU">FX Sports 1 [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/27/20250127021135709552_26.png"/>
+  </channel>
+  <channel id="408622">
+    <display-name lang="RU">CBS Sports Network [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/27/20250127021233318827_22.png"/>
+  </channel>
+  <channel id="408624">
+    <display-name lang="RU">FX Sports 2 [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/27/20250127021403138590_95.png"/>
+  </channel>
+  <channel id="408643">
+    <display-name lang="RU">Golf Channel [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214022324422798_37.png"/>
+  </channel>
+  <channel id="408644">
+    <display-name lang="RU">Fubo Sports Network [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/27/20250127022153094108_80.png"/>
+  </channel>
+  <channel id="408658">
+    <display-name lang="RU">Premier Sports 2 [UK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214023025369820_39.png"/>
+  </channel>
+  <channel id="409238">
+    <display-name lang="RU">Sky Sport Bundesliga HD [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214021117684221_98.png"/>
+  </channel>
+  <channel id="409244">
+    <display-name lang="RU">Sportsnet One [CA]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214021700986198_68.png"/>
+  </channel>
+  <channel id="409245">
+    <display-name lang="RU">Spectrum SportsNet [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214021708531716_50.png"/>
+  </channel>
+  <channel id="409249">
+    <display-name lang="RU">Sportsnet World [CA]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214022053963631_84.png"/>
+  </channel>
+  <channel id="409251">
+    <display-name lang="RU">Sportska Televizija [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214022221092585_52.png"/>
+  </channel>
+  <channel id="409254">
+    <display-name lang="RU">LaLiga TV Hypermotion [ES]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/27/20250127022614305417_49.png"/>
+  </channel>
+  <channel id="409255">
+    <display-name lang="RU">Sportsnet 360 [CA]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/14/20250214022811737594_74.png"/>
+  </channel>
+  <channel id="409256">
+    <display-name lang="RU">Max Sport 1 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/15/20250115024048925149_82.png"/>
+  </channel>
+  <channel id="409257">
+    <display-name lang="RU">Max Sport 2 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/27/20250127022716760092_39.png"/>
+  </channel>
+  <channel id="410319">
+    <display-name lang="RU">Setanta Sports 2 Georgia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129020728780368_77.png"/>
+  </channel>
+  <channel id="410320">
+    <display-name lang="RU">Setanta Sports 1 Georgia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129020754425321_84.png"/>
+  </channel>
+  <channel id="410331">
+    <display-name lang="RU">Setanta Sports 3 Georgia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129023659563054_89.png"/>
+  </channel>
+  <channel id="410384">
+    <display-name lang="HK">Now Sports 4K 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129163059027666_70"/>
+  </channel>
+  <channel id="410385">
+    <display-name lang="HK">Now Sports 4K 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129163628292910_39"/>
+  </channel>
+  <channel id="410386">
+    <display-name lang="HK">Now Sports 4K 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129164158477985_34"/>
+  </channel>
+  <channel id="410387">
+    <display-name lang="HK">Now Sports Premier League TV</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129165616381561_43"/>
+  </channel>
+  <channel id="410388">
+    <display-name lang="HK">Now Sports 英超1台</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129170812036179_71"/>
+  </channel>
+  <channel id="410389">
+    <display-name lang="HK">Now Sports 英超2台</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129171117133369_13"/>
+  </channel>
+  <channel id="410390">
+    <display-name lang="HK">Now Sports 英超3台</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129171408745416_20"/>
+  </channel>
+  <channel id="410391">
+    <display-name lang="HK">Now Sports 英超4台</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129171700710190_24"/>
+  </channel>
+  <channel id="410392">
+    <display-name lang="HK">Now Sports 英超5台</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129171948029241_28"/>
+  </channel>
+  <channel id="410395">
+    <display-name lang="HK">Now Sports 精選</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129173707250196_66"/>
+  </channel>
+  <channel id="410396">
+    <display-name lang="HK">Now Sports 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129174639455108_81"/>
+  </channel>
+  <channel id="410397">
+    <display-name lang="HK">Now Sports 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129175553438313_10"/>
+  </channel>
+  <channel id="410398">
+    <display-name lang="HK">Now Sports 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129181306993785_97"/>
+  </channel>
+  <channel id="410399">
+    <display-name lang="HK">Now Sports 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129182847390620_94"/>
+  </channel>
+  <channel id="410400">
+    <display-name lang="HK">Now Sports 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129183546077032_25"/>
+  </channel>
+  <channel id="410401">
+    <display-name lang="HK">Now Sports 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129184346606632_97"/>
+  </channel>
+  <channel id="410402">
+    <display-name lang="HK">Now Sports 7</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129185256291350_29"/>
+  </channel>
+  <channel id="410403">
+    <display-name lang="HK">beIN SPORTS 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56"/>
+  </channel>
+  <channel id="410404">
+    <display-name lang="HK">beIN SPORTS 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47"/>
+  </channel>
+  <channel id="410406">
+    <display-name lang="HK">Now Sports 641</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129192745681709_23"/>
+  </channel>
+  <channel id="410407">
+    <display-name lang="HK">NBA TV</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37"/>
+  </channel>
+  <channel id="410408">
+    <display-name lang="HK">beIN SPORTS 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58"/>
+  </channel>
+  <channel id="410409">
+    <display-name lang="HK">beIN SPORTS 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129194807542512_16"/>
+  </channel>
+  <channel id="410410">
+    <display-name lang="HK">beIN SPORTS 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129195059532280_52"/>
+  </channel>
+  <channel id="410411">
+    <display-name lang="HK">beIN SPORTS 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86"/>
+  </channel>
+  <channel id="410412">
+    <display-name lang="HK">Now Sports 651</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129195919295374_40"/>
+  </channel>
+  <channel id="410413">
+    <display-name lang="HK">Now Sports 652</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129200443537011_14"/>
+  </channel>
+  <channel id="410417">
+    <display-name lang="HK">Astro Cricket</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79"/>
+  </channel>
+  <channel id="410418">
+    <display-name lang="HK">Premier Sports</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69"/>
+  </channel>
+  <channel id="410419">
+    <display-name lang="HK">Now Sports Plus</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129204340847933_90"/>
+  </channel>
+  <channel id="410420">
+    <display-name lang="HK">Now Golf 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129204844578765_46"/>
+  </channel>
+  <channel id="410421">
+    <display-name lang="HK">Now Golf 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/29/20250129205539443657_25"/>
+  </channel>
+  <channel id="410453">
+    <display-name lang="RU">JOJ Sport [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/01/30/20250130022505689706_94.png"/>
+  </channel>
+  <channel id="410630">
+    <display-name lang="RU">Arena Sport 10 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/04/20250204020750033983_68.png"/>
+  </channel>
+  <channel id="410631">
+    <display-name lang="RU">Arena Sport 9 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/04/20250204020853617121_93.png"/>
+  </channel>
+  <channel id="410632">
+    <display-name lang="RU">Arena Sport 8 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/04/20250204021432223772_93.png"/>
+  </channel>
+  <channel id="410641">
+    <display-name lang="RU">Arena Sport 7 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/04/20250204023005020999_62.png"/>
+  </channel>
+  <channel id="411371">
+    <display-name lang="VN">On Sports+ HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411387">
+    <display-name lang="VN">K+ SPORT1 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411418">
+    <display-name lang="VN">SCTV17 - Ssport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411420">
+    <display-name lang="VN">ON Sports News</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411437">
+    <display-name lang="VN">ON Football (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411453">
+    <display-name lang="VN">ON Sports (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411516">
+    <display-name lang="VN">ON Golf</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411523">
+    <display-name lang="VN">K+ SPORT1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411912">
+    <display-name lang="VN">SCTV 22 - SSportT1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411914">
+    <display-name lang="ID">beIN Sports 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411918">
+    <display-name lang="ID">beIN Sports 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411940">
+    <display-name lang="ID">beIN SPORTS 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411941">
+    <display-name lang="ID">Fight Sport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411949">
+    <display-name lang="ID">Horizon Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411956">
+    <display-name lang="ID">beIN Sports 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411972">
+    <display-name lang="ID">beIN Sports 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411975">
+    <display-name lang="ID">beIN SPORTS 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411979">
+    <display-name lang="ID">sportstars 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411986">
+    <display-name lang="ID">Muhammadiyah TV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="411993">
+    <display-name lang="ID">beIN Sports 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="412007">
+    <display-name lang="ID">NBA</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="412014">
+    <display-name lang="ID">beIN Sports 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="412059">
+    <display-name lang="RU">Sport Klub 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212022353067688_25.png"/>
+  </channel>
+  <channel id="412060">
+    <display-name lang="RU">Sport Klub 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212022356288629_51.png"/>
+  </channel>
+  <channel id="412076">
+    <display-name lang="RU">Sport Klub 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212023942474534_83.png"/>
+  </channel>
+  <channel id="412105">
+    <display-name lang="SG">Hub Sports 3 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042134157406_56.png"/>
+  </channel>
+  <channel id="412129">
+    <display-name lang="SG">beIN Sports 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042406293456_76.png"/>
+  </channel>
+  <channel id="412133">
+    <display-name lang="SG">Premier Sports</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png"/>
+  </channel>
+  <channel id="412140">
+    <display-name lang="SG">Hub Premier 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042515886849_17.png"/>
+  </channel>
+  <channel id="412154">
+    <display-name lang="SG">Hub Sports 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042621415646_73.png"/>
+  </channel>
+  <channel id="412160">
+    <display-name lang="SG">Hub Sports 5 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042641983979_50.png"/>
+  </channel>
+  <channel id="412164">
+    <display-name lang="SG">Hub Premier 2 (HD)</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042700607959_64.png"/>
+  </channel>
+  <channel id="412165">
+    <display-name lang="SG">FIGHT SPORTS HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042702948578_27.png"/>
+  </channel>
+  <channel id="412167">
+    <display-name lang="SG">beIN Sports HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042717130961_58.png"/>
+  </channel>
+  <channel id="412169">
+    <display-name lang="SG">Hub Sports 1  HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042722110292_79.png"/>
+  </channel>
+  <channel id="412175">
+    <display-name lang="SG">beIN Sports 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png"/>
+  </channel>
+  <channel id="412182">
+    <display-name lang="SG">Hub Sports 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042824169600_35.png"/>
+  </channel>
+  <channel id="412198">
+    <display-name lang="SG">Hub Sports 4 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/12/20250212042952565979_23.png"/>
+  </channel>
+  <channel id="412686">
+    <display-name lang="RU">BOX Sport 7 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215020551306187_42.png"/>
+  </channel>
+  <channel id="412705">
+    <display-name lang="RU">BOX Sport 6 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215021402767899_30.png"/>
+  </channel>
+  <channel id="412707">
+    <display-name lang="RU">BOX Sport 8 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215021419054701_28.png"/>
+  </channel>
+  <channel id="412708">
+    <display-name lang="RU">BOX Sport 5 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215021421446502_97.png"/>
+  </channel>
+  <channel id="412712">
+    <display-name lang="RU">BOX Sport 2 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215021731823422_72.png"/>
+  </channel>
+  <channel id="412724">
+    <display-name lang="RU">BOX Sport 10 Live 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215022429602027_25.png"/>
+  </channel>
+  <channel id="412726">
+    <display-name lang="RU">BOX Sport 3 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215022442328516_80.png"/>
+  </channel>
+  <channel id="412730">
+    <display-name lang="RU">TV 2 Sport 2 [NO]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/17/20250217021843447133_12.png"/>
+  </channel>
+  <channel id="412731">
+    <display-name lang="RU">BOX Sport 1 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215022730742003_77.png"/>
+  </channel>
+  <channel id="412747">
+    <display-name lang="RU">BOX Sport 4 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215023710676627_95.png"/>
+  </channel>
+  <channel id="412749">
+    <display-name lang="RU">TV 2 Sport 1 [NO]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/17/20250217022540207646_15.png"/>
+  </channel>
+  <channel id="412754">
+    <display-name lang="RU">BOX Sport 9 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/15/20250215023946638229_51.png"/>
+  </channel>
+  <channel id="412947">
+    <display-name lang="RU">Sky Sports F1 UHD [UK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/20/20250220020810596669_35.png"/>
+  </channel>
+  <channel id="412959">
+    <display-name lang="RU">Sky Sports + [UK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/20/20250220021806601573_79.png"/>
+  </channel>
+  <channel id="413152">
+    <display-name lang="RU">beIN Sports Xtra [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/02/23/20250223020606068934_27.png"/>
+  </channel>
+  <channel id="414019">
+    <display-name lang="RU">Sport Klub 1 [SI]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/02/20250302021218094212_97.png"/>
+  </channel>
+  <channel id="414040">
+    <display-name lang="RU">Sport Klub 2 [SI]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/02/20250302022145116601_39.png"/>
+  </channel>
+  <channel id="415544">
+    <display-name lang="HK">Now Sports 英超6台</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/07/20250307072605751128_33"/>
+  </channel>
+  <channel id="415545">
+    <display-name lang="HK">Now Sports 英超7台</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/07/20250307072905772044_53"/>
+  </channel>
+  <channel id="415568">
+    <display-name lang="RU">Canal+ Sport [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/08/20250308020710018057_69.png"/>
+  </channel>
+  <channel id="415584">
+    <display-name lang="RU">Fox Sports 2 [MX]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/09/20250309021219901521_92.png"/>
+  </channel>
+  <channel id="415585">
+    <display-name lang="RU">Fox Sports [MX]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/09/20250309021231320841_24.png"/>
+  </channel>
+  <channel id="415586">
+    <display-name lang="RU">Fox Sports 3 [MX]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/09/20250309021248533632_54.png"/>
+  </channel>
+  <channel id="415588">
+    <display-name lang="RU">Trace Latina [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/09/20250309021342036559_26.png"/>
+  </channel>
+  <channel id="415598">
+    <display-name lang="RU">Canal+ Sport 360 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/08/20250308022400078271_46.png"/>
+  </channel>
+  <channel id="416875">
+    <display-name lang="RU">ČT4 Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/13/20250313021559071526_69.png"/>
+  </channel>
+  <channel id="417140">
+    <display-name lang="RU">Velilla TV Legendary Matches HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/18/20250318021839795513_61.png"/>
+  </channel>
+  <channel id="417351">
+    <display-name lang="RU">Setanta Sports 2 Lietuva</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/15/20250315021926005178_77.png"/>
+  </channel>
+  <channel id="417364">
+    <display-name lang="RU">Setanta Sports 1 Lietuva</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/15/20250315022730840182_51.png"/>
+  </channel>
+  <channel id="418520">
+    <display-name lang="RU">beIN Sports 2 Singapore</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/20/20250320020537511619_80.png"/>
+  </channel>
+  <channel id="418524">
+    <display-name lang="RU">beIN Sports 1 Singapore</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/20/20250320021103332625_34.png"/>
+  </channel>
+  <channel id="418536">
+    <display-name lang="RU">beIN Sports 3 Singapore</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/20/20250320022134733830_20.png"/>
+  </channel>
+  <channel id="419111">
+    <display-name lang="RU">Magic Premiere</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/06/20250406021456715016_91.png"/>
+  </channel>
+  <channel id="420450">
+    <display-name lang="RU">W-Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/03/31/20250331021620943005_34.png"/>
+  </channel>
+  <channel id="421332">
+    <display-name lang="HK">Now Sports 647</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/03/20250403080005697064_74"/>
+  </channel>
+  <channel id="421444">
+    <display-name lang="AU">LIV Golf Replays</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/04/20250404040422147641_92.png"/>
+  </channel>
+  <channel id="422279">
+    <display-name lang="ZA">SS Premier League</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/06/20250406040233943557_30.png"/>
+  </channel>
+  <channel id="422294">
+    <display-name lang="ZA">RUGBY</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/06/20250406040315917450_30.png"/>
+  </channel>
+  <channel id="422295">
+    <display-name lang="ZA">SS La Liga</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/06/20250406040318962125_58.png"/>
+  </channel>
+  <channel id="422318">
+    <display-name lang="ZA">Trace Gospel</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/06/20250406040423391940_27.png"/>
+  </channel>
+  <channel id="422320">
+    <display-name lang="ZA">TRACE URBAN HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/06/20250406040428937325_93.png"/>
+  </channel>
+  <channel id="422889">
+    <display-name lang="RU">BOX Sport 11 Live 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/08/20250408022454898111_71.png"/>
+  </channel>
+  <channel id="422903">
+    <display-name lang="RU">Sport1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/08/20250408022912540130_14.png"/>
+  </channel>
+  <channel id="423506">
+    <display-name lang="RU">Fast Sports 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/10/20250410021155302125_24.png"/>
+  </channel>
+  <channel id="423518">
+    <display-name lang="RU">Fast Sports 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/10/20250410021929223190_64.png"/>
+  </channel>
+  <channel id="423688">
+    <display-name lang="VN">SCTV15 - SSportT2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="424763">
+    <display-name lang="RU">Sport Klub 2 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/14/20250414021225234425_95.png"/>
+  </channel>
+  <channel id="424764">
+    <display-name lang="RU">Sport Klub 1 [HR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/14/20250414021228123687_65.png"/>
+  </channel>
+  <channel id="425970">
+    <display-name lang="BR">São Paulo/SP  Premiere 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="425984">
+    <display-name lang="BR">São Paulo/SP  Premiere 7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="425985">
+    <display-name lang="BR">São Paulo/SP  Premiere 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="425994">
+    <display-name lang="BR">Belo Horizonte/MG  Premiere 7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="425997">
+    <display-name lang="BR">São Paulo/SP  Premiere 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426005">
+    <display-name lang="BR">São Paulo/SP  SporTV 3 </display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426012">
+    <display-name lang="BR">São Paulo/SP  SporTV 2 HD ³</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426028">
+    <display-name lang="BR">São Paulo/SP  Premiere Clubes</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426049">
+    <display-name lang="BR">Belo Horizonte/MG  Premiere 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426055">
+    <display-name lang="BR">São Paulo/SP  PREMIERE HD 3 ³</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426060">
+    <display-name lang="BR">São Paulo/SP  CONMEBOL TV 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426062">
+    <display-name lang="BR">São Paulo/SP  SporTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426069">
+    <display-name lang="BR">São Paulo/SP  Band Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426082">
+    <display-name lang="BR">São Paulo/SP  SporTV 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426091">
+    <display-name lang="BR">São Paulo/SP  SporTV HD ³</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426104">
+    <display-name lang="BR">São Paulo/SP  Premiere Clubes HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426120">
+    <display-name lang="BR">São Paulo/SP  Premiere HD 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426128">
+    <display-name lang="BR">São Paulo/SP  SporTV 3 HD ³</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426129">
+    <display-name lang="BR">São Paulo/SP  PREMIERE HD 5 ³</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426138">
+    <display-name lang="BR">São Paulo/SP  Band Sports HD ³</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426171">
+    <display-name lang="BR">São Paulo/SP  Premiere 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426174">
+    <display-name lang="BR">São Paulo/SP  Premiere 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426176">
+    <display-name lang="BR">São Paulo/SP  PREMIERE HD 4 ³</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="426490">
+    <display-name lang="RU">Sport1+ HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/19/20250419021922516727_85.png"/>
+  </channel>
+  <channel id="427661">
+    <display-name lang="RU">Sky Sport Austria HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423020644574176_45.png"/>
+  </channel>
+  <channel id="427662">
+    <display-name lang="RU">Sky Sports [MX]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423020714143153_87.png"/>
+  </channel>
+  <channel id="427664">
+    <display-name lang="RU">Sky Cinema Premiere HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423020737203938_23.png"/>
+  </channel>
+  <channel id="427666">
+    <display-name lang="RU">Sky Sport Tennis [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423020918682731_95.png"/>
+  </channel>
+  <channel id="427672">
+    <display-name lang="RU">Sky Sport Premier League [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423021836465800_82.png"/>
+  </channel>
+  <channel id="427675">
+    <display-name lang="RU">Sky Sport Top Event [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423022053540504_66.png"/>
+  </channel>
+  <channel id="427680">
+    <display-name lang="RU">Sky Sports LaLiga [MX]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423022300132210_61.png"/>
+  </channel>
+  <channel id="427687">
+    <display-name lang="RU">Sky Sport F1 [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423022705987455_16.png"/>
+  </channel>
+  <channel id="427693">
+    <display-name lang="RU">Sky Sport News [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423023213762368_32.png"/>
+  </channel>
+  <channel id="427694">
+    <display-name lang="RU">Sky Sport Mix [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423023217220835_61.png"/>
+  </channel>
+  <channel id="427696">
+    <display-name lang="RU">Sky Sport Golf [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/04/23/20250423023321699553_49.png"/>
+  </channel>
+  <channel id="427995">
+    <display-name lang="PH">UFCTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="429563">
+    <display-name lang="SG">EUROSPORT (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="430089">
+    <display-name lang="RU">RMC Sport Access [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/07/20250507021233527876_49.png"/>
+  </channel>
+  <channel id="430091">
+    <display-name lang="RU">Golf+ [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/07/20250507021356989422_36.png"/>
+  </channel>
+  <channel id="430095">
+    <display-name lang="RU">Trace Brasil</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/07/20250507021629091706_40.png"/>
+  </channel>
+  <channel id="430096">
+    <display-name lang="RU">RMC Sport 1 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/07/20250507021839789854_89.png"/>
+  </channel>
+  <channel id="430102">
+    <display-name lang="RU">Fox Soccer Plus [US]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/07/20250507022557661262_12.png"/>
+  </channel>
+  <channel id="430106">
+    <display-name lang="RU">Canal+ Premier League [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/07/20250507022829738107_92.png"/>
+  </channel>
+  <channel id="430107">
+    <display-name lang="RU">RMC Sport 2 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/07/20250507023001922505_38.png"/>
+  </channel>
+  <channel id="430245">
+    <display-name lang="HK">TRACE Urban</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="430249">
+    <display-name lang="HK">TRACE Sport Stars</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="430853">
+    <display-name lang="HK">SUPER Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="431608">
+    <display-name lang="RU">TNT Sports Premium HD [AR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/17/20250517020553646570_49.png"/>
+  </channel>
+  <channel id="431616">
+    <display-name lang="RU">FOX Sports 3 HD [AR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/17/20250517021133720201_88.png"/>
+  </channel>
+  <channel id="431621">
+    <display-name lang="RU">FOX Sports 2 HD [AR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/17/20250517021747618547_31.png"/>
+  </channel>
+  <channel id="431624">
+    <display-name lang="RU">FOX Sports HD [AR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/17/20250517022202197468_75.png"/>
+  </channel>
+  <channel id="431627">
+    <display-name lang="RU">Sky Sports 2 UHD [UK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/17/20250517022620347330_71.png"/>
+  </channel>
+  <channel id="431628">
+    <display-name lang="RU">Sky Sports 1 UHD [UK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/17/20250517022802627340_47.png"/>
+  </channel>
+  <channel id="431630">
+    <display-name lang="RU">TyC Sports HD [AR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/17/20250517022848827833_23.png"/>
+  </channel>
+  <channel id="432495">
+    <display-name lang="RU">BOX Serial Premiere 4K</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/23/20250523021702960772_28.png"/>
+  </channel>
+  <channel id="433607">
+    <display-name lang="RU">Premiere HD 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/05/30/20250530020627077115_17.png"/>
+  </channel>
+  <channel id="435390">
+    <display-name lang="RU">Sky Sport Max [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/10/20250610021143996305_30.png"/>
+  </channel>
+  <channel id="435394">
+    <display-name lang="RU">Sky Sport NBA [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/10/20250610021438595998_15.png"/>
+  </channel>
+  <channel id="435407">
+    <display-name lang="RU">Sky Sport Calcio [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/10/20250610023354551362_72.png"/>
+  </channel>
+  <channel id="435546">
+    <display-name lang="RU">Sky Sport Uno [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/11/20250611022740954695_87.png"/>
+  </channel>
+  <channel id="436281">
+    <display-name lang="RU">Premiere HD 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/16/20250616020900095328_20.png"/>
+  </channel>
+  <channel id="436515">
+    <display-name lang="RU">Fast Sports</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/17/20250617020902299072_18.png"/>
+  </channel>
+  <channel id="436792">
+    <display-name lang="RU">Astro Sports Plus</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/18/20250618022239068600_53.png"/>
+  </channel>
+  <channel id="436794">
+    <display-name lang="RU">Astro Sports UHD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/18/20250618022448782501_90.png"/>
+  </channel>
+  <channel id="436806">
+    <display-name lang="RU">Astro Badminton</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/18/20250618023008002935_53.png"/>
+  </channel>
+  <channel id="436816">
+    <display-name lang="RU">Astro Football HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/18/20250618023302912242_31.png"/>
+  </channel>
+  <channel id="438441">
+    <display-name lang="DE">sportdigital Fussball</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="438445">
+    <display-name lang="DE">Sky Sport Premier League</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="438446">
+    <display-name lang="DE">Auto Motor Sport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="438448">
+    <display-name lang="DE">Sky Sport Austria</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="438461">
+    <display-name lang="DE">Sky Cinema Premiere HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="440602">
+    <display-name lang="RU">BCU Premium Premiere+ 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/06/28/20250628021711498901_10.png"/>
+  </channel>
+  <channel id="441986">
+    <display-name lang="RU">BCU Premium Premiere 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/01/20250701023027379142_39.png"/>
+  </channel>
+  <channel id="442714">
+    <display-name lang="RU">beIN Sports Max 2 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/03/20250703022633763886_95.png"/>
+  </channel>
+  <channel id="443103">
+    <display-name lang="FR">beIN SPORTS MAX 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443147">
+    <display-name lang="FR">beIN SPORTS 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443150">
+    <display-name lang="FR">beIN SPORTS MAX 10</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443164">
+    <display-name lang="FR">RMC Sport Live 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443174">
+    <display-name lang="FR">TF1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443213">
+    <display-name lang="FR">beIN SPORTS MAX 8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443216">
+    <display-name lang="FR">TRACE CARIBBEAN</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443232">
+    <display-name lang="FR">Trace Gospel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443239">
+    <display-name lang="FR">beIN SPORTS MAX 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443241">
+    <display-name lang="FR">Trace Africa</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="443242">
+    <display-name lang="FR">RMC Sport Access</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="444098">
+    <display-name lang="RU">S Sport [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/08/20250708021003494940_34.png"/>
+  </channel>
+  <channel id="444123">
+    <display-name lang="RU">S Sport 2 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/08/20250708023111249819_56.png"/>
+  </channel>
+  <channel id="444724">
+    <display-name lang="FR">Eurosport 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="444725">
+    <display-name lang="FR">Eurosport 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="446089">
+    <display-name lang="RU">Extreme Sports [RU]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/21/20250721021940078598_79.png"/>
+  </channel>
+  <channel id="446419">
+    <display-name lang="RU">Premier Sport 3 [SK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/22/20250722022303075740_92.png"/>
+  </channel>
+  <channel id="446422">
+    <display-name lang="RU">Astro Cricket</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/22/20250722023402190416_19.png"/>
+  </channel>
+  <channel id="446431">
+    <display-name lang="RU">Astro Premier League 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/22/20250722024714390581_91.png"/>
+  </channel>
+  <channel id="446433">
+    <display-name lang="RU">Astro Premier League HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/22/20250722024720531439_80.png"/>
+  </channel>
+  <channel id="446948">
+    <display-name lang="RU">Arena Esport [RS]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/04/20250804023013524127_39.png"/>
+  </channel>
+  <channel id="446961">
+    <display-name lang="AU">Fox Sports 506</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="446963">
+    <display-name lang="AU">FOX League</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="446965">
+    <display-name lang="AU">Main Event UFC</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="446968">
+    <display-name lang="AU">FOX CRICKET</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="446991">
+    <display-name lang="AU">Movies Premiere</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="447006">
+    <display-name lang="AU">FOX SPORTS NEWS</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="447007">
+    <display-name lang="AU">Fox Sports 505</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="447015">
+    <display-name lang="AU">Fox Sports 503</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="447025">
+    <display-name lang="AU">Fox Sports More</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="447399">
+    <display-name lang="RU">Premiere HD 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/27/20250727021251739529_87.png"/>
+  </channel>
+  <channel id="447401">
+    <display-name lang="RU">Sky Sport Legend [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/08/20250808021332930148_31.png"/>
+  </channel>
+  <channel id="447410">
+    <display-name lang="RU">Sky Sport Mix [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/08/20250808022630184353_62.png"/>
+  </channel>
+  <channel id="447909">
+    <display-name lang="ZA">GOLF</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/07/31/20250731040301826295_94.png"/>
+  </channel>
+  <channel id="448565">
+    <display-name lang="FR">Journal du Golf TV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="448570">
+    <display-name lang="FR">RMC Sport Live 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="448594">
+    <display-name lang="FR">Trace Latina</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="449431">
+    <display-name lang="RU">Sport 2 [HU]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/06/20250806024722138258_50.png"/>
+  </channel>
+  <channel id="449439">
+    <display-name lang="ZA">TRACE Africa</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/06/20250806040252720501_38.png"/>
+  </channel>
+  <channel id="449589">
+    <display-name lang="RU">Polsat Sport Premium 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/07/20250807023238348901_98.png"/>
+  </channel>
+  <channel id="449590">
+    <display-name lang="RU">Polsat Sport Premium 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/07/20250807023241047322_65.png"/>
+  </channel>
+  <channel id="449612">
+    <display-name lang="ZA">CRICKET</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/07/20250807040217272584_69.png"/>
+  </channel>
+  <channel id="450289">
+    <display-name lang="GB">Sky Sports Football HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450291">
+    <display-name lang="DE">Sport 16 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450292">
+    <display-name lang="DE">Sport 18 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450294">
+    <display-name lang="DE">SportDigital1+</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450295">
+    <display-name lang="DE">Sport 5 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450297">
+    <display-name lang="DE">eSportsONE</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450300">
+    <display-name lang="DE">Sport 8 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450303">
+    <display-name lang="DE">Sport 7 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450304">
+    <display-name lang="DE">Sport 6 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450501">
+    <display-name lang="DE">Sport 2 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450502">
+    <display-name lang="DE">Sport 9 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450710">
+    <display-name lang="SG">Hub Premier 8</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/13/20250813042604656209_88.png"/>
+  </channel>
+  <channel id="450711">
+    <display-name lang="SG">Hub Premier 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/13/20250813042607255287_83.png"/>
+  </channel>
+  <channel id="450846">
+    <display-name lang="ZA">SS Football</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/14/20250814040145444203_78.png"/>
+  </channel>
+  <channel id="450848">
+    <display-name lang="ZA">TENNIS</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/14/20250814040155173531_37.png"/>
+  </channel>
+  <channel id="450988">
+    <display-name lang="RU">Sky Sport UHD [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815021655905488_12.png"/>
+  </channel>
+  <channel id="450994">
+    <display-name lang="RU">Sky Sport Bundesliga UHD [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815022102289724_83.png"/>
+  </channel>
+  <channel id="450995">
+    <display-name lang="RU">BOX SportCast Live 1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815022345930593_57.png"/>
+  </channel>
+  <channel id="451011">
+    <display-name lang="RU">BOX SportCast Live 9 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023905915768_83.png"/>
+  </channel>
+  <channel id="451012">
+    <display-name lang="RU">BOX SportCast Live 8 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023908375098_48.png"/>
+  </channel>
+  <channel id="451013">
+    <display-name lang="RU">BOX SportCast Live 3 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023911836630_49.png"/>
+  </channel>
+  <channel id="451014">
+    <display-name lang="RU">BOX SportCast Live 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023914326491_19.png"/>
+  </channel>
+  <channel id="451015">
+    <display-name lang="RU">BOX SportCast Live 5 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023916818594_29.png"/>
+  </channel>
+  <channel id="451016">
+    <display-name lang="RU">BOX SportCast Live 4 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023919269047_27.png"/>
+  </channel>
+  <channel id="451017">
+    <display-name lang="RU">BOX SportCast Live 7 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023921734211_91.png"/>
+  </channel>
+  <channel id="451018">
+    <display-name lang="RU">BOX SportCast Live 6 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815023924183103_36.png"/>
+  </channel>
+  <channel id="451037">
+    <display-name lang="ZA">MOTORSPORT</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815040216538075_80.png"/>
+  </channel>
+  <channel id="451051">
+    <display-name lang="ZA">SuperSport School HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/15/20250815040316300485_69.png"/>
+  </channel>
+  <channel id="451202">
+    <display-name lang="RU">BCU Кинозал Premiere 3 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/16/20250816022059040130_90.png"/>
+  </channel>
+  <channel id="452068">
+    <display-name lang="RU">VeleS Premiere</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/21/20250821021438238525_21.png"/>
+  </channel>
+  <channel id="452118">
+    <display-name lang="DE">Sky Sport Austria 6 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452120">
+    <display-name lang="DE">Sky Sport Austria 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452121">
+    <display-name lang="DE">Sky Sport Austria 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452122">
+    <display-name lang="DE">Sky Sport Austria 5 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452123">
+    <display-name lang="DE">Sky Sport Austria 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452124">
+    <display-name lang="DE">Sky Sport UHD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452125">
+    <display-name lang="DE">Sky Sport Austria 7 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452126">
+    <display-name lang="DE">Sky Sport Austria 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="452290">
+    <display-name lang="RU">Polsat Sport Premium 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/22/20250822023124036074_72.png"/>
+  </channel>
+  <channel id="452962">
+    <display-name lang="SG">Hub Premier 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/26/20250826042512532546_36.png"/>
+  </channel>
+  <channel id="453359">
+    <display-name lang="RU">BOX SR Sport 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/29/20250829021424345393_39.png"/>
+  </channel>
+  <channel id="453366">
+    <display-name lang="RU">beIN Sports 2 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/29/20250829022400394953_45.png"/>
+  </channel>
+  <channel id="453374">
+    <display-name lang="RU">Premier League TV HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/29/20250829023221880198_25.png"/>
+  </channel>
+  <channel id="453376">
+    <display-name lang="RU">beIN Sports 1 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/29/20250829023336020179_49.png"/>
+  </channel>
+  <channel id="453656">
+    <display-name lang="RU">Premiere HD 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/08/31/20250831021137204042_43.png"/>
+  </channel>
+  <channel id="454087">
+    <display-name lang="RU">BCU Кинозал Premiere 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/03/20250903022619098711_26.png"/>
+  </channel>
+  <channel id="454594">
+    <display-name lang="RU">BOX SportCast HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/06/20250906022833737271_26.png"/>
+  </channel>
+  <channel id="454969">
+    <display-name lang="GB">Sky Sports NFL</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="455185">
+    <display-name lang="SG">Hub Sports 7</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/09/20250909042505032176_56.png"/>
+  </channel>
+  <channel id="455186">
+    <display-name lang="SG">Hub Premier 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/09/20250909042507768164_39.png"/>
+  </channel>
+  <channel id="455187">
+    <display-name lang="SG">Hub Sports 8</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/09/20250909042510381850_84.png"/>
+  </channel>
+  <channel id="455794">
+    <display-name lang="RU">BOX Sport 13 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/14/20250914021049061850_74.png"/>
+  </channel>
+  <channel id="455796">
+    <display-name lang="RU">BOX SR Sport 5 Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/13/20250913021251919499_57.png"/>
+  </channel>
+  <channel id="455805">
+    <display-name lang="RU">BOX Sport 12 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/14/20250914021837176497_68.png"/>
+  </channel>
+  <channel id="455810">
+    <display-name lang="RU">BOX SR Sport 6 Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/13/20250913022727981720_18.png"/>
+  </channel>
+  <channel id="455815">
+    <display-name lang="RU">beIN Sports Max 1 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/13/20250913023506469660_26.png"/>
+  </channel>
+  <channel id="455988">
+    <display-name lang="DE">Sport 14 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="456147">
+    <display-name lang="DE">Sport 4 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="456331">
+    <display-name lang="DE">Sky Sport 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="456489">
+    <display-name lang="RU">More Than Sports TV [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/17/20250917022627906596_55.png"/>
+  </channel>
+  <channel id="457028">
+    <display-name lang="RU">Arena Sport 1x2 [RS]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/22/20250922021450157273_83.png"/>
+  </channel>
+  <channel id="457240">
+    <display-name lang="TW">TRACE Urban HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/19/20250919165809388439_76.png"/>
+  </channel>
+  <channel id="457253">
+    <display-name lang="TW">TRACE Sport Stars HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/19/20250919170156924780_29.png"/>
+  </channel>
+  <channel id="457259">
+    <display-name lang="TW">EUROSPORT HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/19/20250919170311454372_76.png"/>
+  </channel>
+  <channel id="459099">
+    <display-name lang="RU">InfoSport+ [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928020937311115_95.png"/>
+  </channel>
+  <channel id="459106">
+    <display-name lang="RU">beIN Sports Max 10 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928021123796782_40.png"/>
+  </channel>
+  <channel id="459113">
+    <display-name lang="RU">beIN Sports Max 7 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928021410387122_65.png"/>
+  </channel>
+  <channel id="459115">
+    <display-name lang="RU">beIN Sports Max 4 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928021521004992_66.png"/>
+  </channel>
+  <channel id="459121">
+    <display-name lang="RU">beIN Sports Max 8 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928021708375009_76.png"/>
+  </channel>
+  <channel id="459131">
+    <display-name lang="RU">Sport en France [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928021919579474_18.png"/>
+  </channel>
+  <channel id="459136">
+    <display-name lang="RU">beIN Sports Max 6 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928022111849919_86.png"/>
+  </channel>
+  <channel id="459137">
+    <display-name lang="RU">Trace Urban [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928022139097800_30.png"/>
+  </channel>
+  <channel id="459142">
+    <display-name lang="RU">beIN Sports Max 9 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928022408985770_31.png"/>
+  </channel>
+  <channel id="459151">
+    <display-name lang="RU">beIN Sports Max 5 [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/09/28/20250928022754602091_24.png"/>
+  </channel>
+  <channel id="459178">
+    <display-name lang="FR">Infosport+</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459182">
+    <display-name lang="FR">Canal+ Sport 360</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459224">
+    <display-name lang="FR">VooSport World2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459233">
+    <display-name lang="FR">Ciné+ Premier Belgique</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459237">
+    <display-name lang="FR">VooSport World1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459261">
+    <display-name lang="FR">GINX eSports TV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459266">
+    <display-name lang="FR">Canal+ Sport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459284">
+    <display-name lang="FR">TF1 Séries Films</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459640">
+    <display-name lang="FR">CANAL+SPORT360</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="459650">
+    <display-name lang="FR">CANAL+SPORT</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="460734">
+    <display-name lang="TW">TRACE Sport Stars HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="460833">
+    <display-name lang="TW">EUROSPORT HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="460846">
+    <display-name lang="TW">TRACE Urban HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="462760">
+    <display-name lang="DE">Sport 15 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="462765">
+    <display-name lang="AU">Cricket Gold</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/02/20251002040408938313_92.png"/>
+  </channel>
+  <channel id="463009">
+    <display-name lang="RU">SKY HIGH TRACE S FHD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/03/20251003024142923846_40.png"/>
+  </channel>
+  <channel id="463019">
+    <display-name lang="GB">TNT Sports Box Office 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463020">
+    <display-name lang="GB">TNT Sports 6 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463021">
+    <display-name lang="GB">TNT Sports 9 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463022">
+    <display-name lang="GB">TNT Sports Box Office</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463023">
+    <display-name lang="GB">TNT Sports Ultimate HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463024">
+    <display-name lang="GB">TNT Sports 7 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463025">
+    <display-name lang="GB">TNT Sports 8 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463026">
+    <display-name lang="GB">TNT Sports 5 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463027">
+    <display-name lang="GB">TNT Sports 10 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463820">
+    <display-name lang="IN">SONY SPORTS TEN 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463823">
+    <display-name lang="IN">STAR SPORTS 2 KANNADA</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463825">
+    <display-name lang="IN">STAR SPORTS 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463839">
+    <display-name lang="IN">STAR SPORTS 2 HINDI HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463848">
+    <display-name lang="IN">SONY SPORTS TEN 4 TAMIL</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463852">
+    <display-name lang="IN">Star Sports Khel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463872">
+    <display-name lang="IN">STAR SPORTS 2 TAMIL</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463887">
+    <display-name lang="IN">STAR SPORTS 1 HINDI</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463899">
+    <display-name lang="IN">STAR SPORTS 2 TELUGU HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463908">
+    <display-name lang="IN">SONY SPORTS TEN 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463924">
+    <display-name lang="IN">SONY SPORTS TEN 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463929">
+    <display-name lang="IN">SONY SPORTS TEN 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463937">
+    <display-name lang="IN">STAR SPORTS SELECT 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463953">
+    <display-name lang="IN">STAR SPORTS SELECT 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463965">
+    <display-name lang="IN">ZEE CAFE HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464011">
+    <display-name lang="IN">SONY SPORTS TEN 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464014">
+    <display-name lang="IN">STAR SPORTS 1 TAMIL</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464015">
+    <display-name lang="IN">STAR SPORTS 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464027">
+    <display-name lang="IN">Eurosport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464048">
+    <display-name lang="IN">SONY SPORTS TEN 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464065">
+    <display-name lang="IN">Star Sports Select 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464108">
+    <display-name lang="IN">STAR SPORTS 2 HINDI</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464123">
+    <display-name lang="IN">EUROSPORTS HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464137">
+    <display-name lang="IN">STAR SPORTS 1 TELUGU</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464162">
+    <display-name lang="IN">STAR SPORTS 1 KANNADA</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464163">
+    <display-name lang="IN">STAR SPORTS 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464175">
+    <display-name lang="IN">ZEE CAFE</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464182">
+    <display-name lang="IN">DD Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464209">
+    <display-name lang="IN">STAR SPORTS 2 TELUGU</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464214">
+    <display-name lang="IN">SONY SPORTS TEN 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464224">
+    <display-name lang="IN">STAR SPORTS 2 TAMIL HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464238">
+    <display-name lang="IN">STAR SPORTS SELECT 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464242">
+    <display-name lang="IN">STAR SPORTS 1 TELUGU HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464249">
+    <display-name lang="IN">STAR SPORTS 1 HD HINDI</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464268">
+    <display-name lang="IN">STAR SPORTS 1 TAMIL HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464285">
+    <display-name lang="IN">STAR SPORTS 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464295">
+    <display-name lang="IN">STAR SPORTS 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464301">
+    <display-name lang="IN">SONY SPORTS TEN 5 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464444">
+    <display-name lang="RU">Trace Caribbean [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/05/20251005022057038603_97.png"/>
+  </channel>
+  <channel id="464744">
+    <display-name lang="DE">Sky Sport Bundesliga 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464754">
+    <display-name lang="US">beIN Sports USA HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464777">
+    <display-name lang="US">SNY SportsNet New York HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464778">
+    <display-name lang="US">NBA League Pass/MLS Direct Kick HDTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464779">
+    <display-name lang="US">NBC Sports 4K</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464783">
+    <display-name lang="US">Golf Channel HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464787">
+    <display-name lang="US">NBA League Pass 9 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464789">
+    <display-name lang="US">NBC Sports California Plus 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464801">
+    <display-name lang="US">NBA League Pass 9</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464806">
+    <display-name lang="US">Spectrum SportsNet Lakers HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464812">
+    <display-name lang="US">MSG Sportsnet 2 Zone 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464833">
+    <display-name lang="US">MASN2 - Mid Atlantic Sports Network 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464848">
+    <display-name lang="US">NBA League Pass 8 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464855">
+    <display-name lang="US">NBA League Pass 7 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464856">
+    <display-name lang="US">Marquee Sports Network Overflow</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464892">
+    <display-name lang="US">NBC Sports Northwest Streaming</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464904">
+    <display-name lang="US">NBC Sports California Outer Market</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464910">
+    <display-name lang="US">NBC Sports Boston HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464912">
+    <display-name lang="US">NBA TV HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464916">
+    <display-name lang="US">Arizona Family Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464924">
+    <display-name lang="US">NBA League Pass 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464935">
+    <display-name lang="US">ATN Cricket Plus</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464937">
+    <display-name lang="US">CBS Sports Network HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464948">
+    <display-name lang="US">NBA League Pass 5 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464952">
+    <display-name lang="US">TyC Sports Internacional USA</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464990">
+    <display-name lang="US">NBC Sports HD 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464993">
+    <display-name lang="US">NBC Sports California Plus</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464996">
+    <display-name lang="US">MSG SportsZone</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="464999">
+    <display-name lang="US">NBC Sports HD 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465001">
+    <display-name lang="US">NBA League Pass 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465010">
+    <display-name lang="US">Willow Cricket HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465013">
+    <display-name lang="US">NBC Sports Bay Area Plus</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465016">
+    <display-name lang="US">NBA League Pass 7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465037">
+    <display-name lang="US">NBC Sports Philadelphia HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465043">
+    <display-name lang="US">NBC Sports Bay Area Outer Market</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465054">
+    <display-name lang="US">NBC Sports California HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465058">
+    <display-name lang="US">CHSN Chicago Sports Network</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465062">
+    <display-name lang="US">Root Sports Northwest Plus</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465077">
+    <display-name lang="US">Spectrum SportsNet LA Dodgers HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465094">
+    <display-name lang="US">NBC Sports HD 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465102">
+    <display-name lang="US">NBC Sports Boston Outer Market</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465124">
+    <display-name lang="US">SportsNet Pittsburgh HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465125">
+    <display-name lang="US">NBA League Pass 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465136">
+    <display-name lang="US">ROOT Sports Northwest HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465137">
+    <display-name lang="US">NBA League Pass 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465141">
+    <display-name lang="US">NBA League Pass 10</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465143">
+    <display-name lang="US">NBA League Pass 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465163">
+    <display-name lang="US">NBC Sports Bay Area HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465181">
+    <display-name lang="US">DirecTV Sports Mix</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465195">
+    <display-name lang="US">DIRECTV Sports MixHD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465214">
+    <display-name lang="US">Fox Soccer Plus HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465217">
+    <display-name lang="US">MSG Sportsnet Zone 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465225">
+    <display-name lang="US">New England Sports Network HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465231">
+    <display-name lang="US">RACER Network HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465236">
+    <display-name lang="US">Tennis Channel HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465244">
+    <display-name lang="US">NBA League Pass 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465247">
+    <display-name lang="US">MSG Sportsnet 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465260">
+    <display-name lang="US">NBC Sports Philadelphia Plus</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465264">
+    <display-name lang="US">Sportsman Channel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465271">
+    <display-name lang="US">Marquee Sports Network HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465288">
+    <display-name lang="US">Altitude Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465291">
+    <display-name lang="US">FS1 Fox Sports 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465295">
+    <display-name lang="US">VSIN Vegas Sports and Information Network</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465299">
+    <display-name lang="US">NBA League Pass 8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465314">
+    <display-name lang="US">NBA League Pass 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465338">
+    <display-name lang="US">NBA League Pass 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465343">
+    <display-name lang="US">NBA League Pass 6 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465347">
+    <display-name lang="US">Monumental Sports Network HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465348">
+    <display-name lang="US">NHL Network HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465351">
+    <display-name lang="US">Monumental Sports Network 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465355">
+    <display-name lang="US">FS2 Fox Sports 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465361">
+    <display-name lang="US">Monumental Sports Network Outer Market</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465366">
+    <display-name lang="US">beIN Sports En Español HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465380">
+    <display-name lang="US">NECN+ New England Sports Network Plus</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465383">
+    <display-name lang="US">MLS Direct Kick - Direct TV - MLSSO</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465387">
+    <display-name lang="US">Next Level Sports HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465408">
+    <display-name lang="US">NBA League Pass 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465409">
+    <display-name lang="US">MASN - Mid Atlantic Sports Network</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465413">
+    <display-name lang="BR">Premiere Clubes</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465416">
+    <display-name lang="BR">SporTV 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465418">
+    <display-name lang="BR">SporTV 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465475">
+    <display-name lang="BR">Band Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465504">
+    <display-name lang="BR">SporTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465508">
+    <display-name lang="US">NHL - Carolina Hurricanes</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465510">
+    <display-name lang="US">NBA - Utah Jazz</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465511">
+    <display-name lang="US">WNBA - Atlanta Dream</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465512">
+    <display-name lang="US">WNBA - Las Vegas Aces</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465531">
+    <display-name lang="US">WNBA - Washington Mystics</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465532">
+    <display-name lang="US">NFL - Washington Commanders</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465535">
+    <display-name lang="US">NBA - New Orleans Pelicans</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465536">
+    <display-name lang="US">NHL - Dallas Stars</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465543">
+    <display-name lang="US">NBA - Chicago Bulls</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465544">
+    <display-name lang="US">NHL - Anaheim Ducks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465545">
+    <display-name lang="US">NHL - Buffalo Sabres</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465557">
+    <display-name lang="US">WNBA - Connecticut Sun</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465561">
+    <display-name lang="US">NHL - San Jose Sharks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465564">
+    <display-name lang="US">NBA - Detroit Pistons</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465566">
+    <display-name lang="US">NHL - Philadelphia Flyers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465573">
+    <display-name lang="US">NBA - Boston Celtics</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465575">
+    <display-name lang="US">NHL - Columbus Blue Jackets</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465577">
+    <display-name lang="US">NBA - Minnesota Timberwolves</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465585">
+    <display-name lang="US">NBA - Oklahoma City Thunder</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465590">
+    <display-name lang="US">WNBA - Minnesota Lynx</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465593">
+    <display-name lang="US">NHL - Detroit Red Wings</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465599">
+    <display-name lang="US">NHL - New York Rangers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465600">
+    <display-name lang="US">NHL - Utah Mammoth</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465602">
+    <display-name lang="US">NBA - Memphis Grizzlies</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465603">
+    <display-name lang="US">NHL - Edmonton Oilers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465604">
+    <display-name lang="US">WNBA - Seattle Storm</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465606">
+    <display-name lang="US">NHL - Winnipeg Jets</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465609">
+    <display-name lang="US">WNBA - Indiana Fever</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465616">
+    <display-name lang="US">NHL - Vancouver Canucks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465620">
+    <display-name lang="US">NBA - Cleveland Cavaliers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465621">
+    <display-name lang="US">WNBA - Dallas Wings</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465627">
+    <display-name lang="US">NHL - Pittsburgh Penguins</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465629">
+    <display-name lang="US">NHL - Montreal Canadiens</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465632">
+    <display-name lang="US">NHL - Los Angeles Kings</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465634">
+    <display-name lang="US">NHL - Chicago Blackhawks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465637">
+    <display-name lang="US">NBA - Miami Heat</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465639">
+    <display-name lang="US">WNBA - New York Liberty</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465641">
+    <display-name lang="US">NHL - Minnesota Wild</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465652">
+    <display-name lang="US">NBA - Sacramento Kings</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465654">
+    <display-name lang="US">NHL - Florida Panthers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465657">
+    <display-name lang="US">NBA - Toronto Raptors</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465662">
+    <display-name lang="US">NBA - Houston Rockets</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465673">
+    <display-name lang="US">NBA - Denver Nuggets</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465675">
+    <display-name lang="US">NHL - St. Louis Blues</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465679">
+    <display-name lang="US">NHL - New Jersey Devils</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465683">
+    <display-name lang="US">WNBA - Chicago Sky</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465684">
+    <display-name lang="US">NHL - Toronto Maple Leafs</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465685">
+    <display-name lang="US">NBA - Dallas Mavericks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465692">
+    <display-name lang="US">NBA - Philadelphia 76ers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465694">
+    <display-name lang="US">NBA - Charlotte Hornets</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465695">
+    <display-name lang="US">NHL - Vegas Golden Knights</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465699">
+    <display-name lang="US">WNBA - Golden State Valkyries</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465700">
+    <display-name lang="US">NHL - Seattle Kraken</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465702">
+    <display-name lang="US">NBA - New York Knicks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465704">
+    <display-name lang="US">NBA - LA Clippers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465707">
+    <display-name lang="US">NBA - Indiana Pacers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465708">
+    <display-name lang="US">NBA - Portland Trail Blazers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465713">
+    <display-name lang="US">NHL - Tampa Bay Lightning</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465714">
+    <display-name lang="US">NHL - Calgary Flames</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465724">
+    <display-name lang="US">NBA - Los Angeles Lakers</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465730">
+    <display-name lang="US">NHL - Colorado Avalanche</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465735">
+    <display-name lang="US">WNBA - Los Angeles Sparks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465740">
+    <display-name lang="US">NBA - Phoenix Suns</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465743">
+    <display-name lang="US">NHL - Nashville Predators</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465750">
+    <display-name lang="US">NBA - Washington Wizards</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465754">
+    <display-name lang="US">NBA - Milwaukee Bucks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465756">
+    <display-name lang="US">NHL - New York Islanders</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465759">
+    <display-name lang="US">WNBA - Phoenix Mercury</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465762">
+    <display-name lang="US">NBA - San Antonio Spurs</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465766">
+    <display-name lang="US">NHL - Washington Capitals</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465767">
+    <display-name lang="US">NBA - Atlanta Hawks</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465772">
+    <display-name lang="US">NHL - Ottawa Senators</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465785">
+    <display-name lang="US">NBA - Golden State Warriors</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465786">
+    <display-name lang="US">NBA - Orlando Magic</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465796">
+    <display-name lang="US">NHL - Boston Bruins</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="465803">
+    <display-name lang="US">NBA - Brooklyn Nets</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="466916">
+    <display-name lang="US">WPGA-DT</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="467294">
+    <display-name lang="US">WPGA-LD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="468078">
+    <display-name lang="US">KNHL-DT</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="469251">
+    <display-name lang="US">KBWF-LD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470303">
+    <display-name lang="CA">NBA League Pass HD 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470304">
+    <display-name lang="CA">Sportsnet One Oilers SD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470311">
+    <display-name lang="CA">Sportsnet One Canucks HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470314">
+    <display-name lang="CA">NHL Centre Ice HD 9</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470339">
+    <display-name lang="CA">Réseau des Sports Info</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470340">
+    <display-name lang="CA">beIN Sports HD (Canada)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470350">
+    <display-name lang="CA">Sportsnet One Canucks SD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470355">
+    <display-name lang="CA">EPG Cricket (Pay-Per-View)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470359">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470366">
+    <display-name lang="CA">NBA TV Canada HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470378">
+    <display-name lang="CA">NHL Centre Ice HD 11</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470386">
+    <display-name lang="CA">Sportsnet One Flames SD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470392">
+    <display-name lang="CA">Sportsnet 360 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470394">
+    <display-name lang="CA">NHLVU (Static)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470399">
+    <display-name lang="CA">Réseau des Sports (RDS) HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470405">
+    <display-name lang="CA">CBWFT</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470434">
+    <display-name lang="CA">NBA League Pass HD 10</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470437">
+    <display-name lang="CA">Fox Sports Racing</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470441">
+    <display-name lang="CA">Sportsnet One Oilers HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470443">
+    <display-name lang="CA">Sportsnet West HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470448">
+    <display-name lang="CA">Sportsnet One Flames HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470463">
+    <display-name lang="CA">Réseau des Sports (RDS)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470485">
+    <display-name lang="CA">Shaw Direct NBA 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470501">
+    <display-name lang="CA">NBA League Pass HD 9</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470516">
+    <display-name lang="CA">Sportsman Channel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470528">
+    <display-name lang="CA">NHL Centre Ice HD 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470537">
+    <display-name lang="CA">Shaw Direct NBA 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470551">
+    <display-name lang="CA">Shaw Direct NBA 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470564">
+    <display-name lang="CA">TVA Sports 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470571">
+    <display-name lang="CA">Sportsnet Ontario HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470573">
+    <display-name lang="CA">NHL Centre Ice HD 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470574">
+    <display-name lang="CA">Sportsnet East</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470578">
+    <display-name lang="CA">TVA Sports HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470593">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI9</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470619">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI10</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470628">
+    <display-name lang="CA">Sportsnet MST</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470637">
+    <display-name lang="CA">NBA League Pass HD 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470641">
+    <display-name lang="CA">Fox Sports Racing HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470650">
+    <display-name lang="CA">NHL Centre Ice HD 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470653">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470654">
+    <display-name lang="CA">NHL Centre Ice HD 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470657">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470662">
+    <display-name lang="CA">PPV Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470666">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470667">
+    <display-name lang="CA">Shaw Direct NBA 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470681">
+    <display-name lang="CA">Shaw Direct NBA 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470688">
+    <display-name lang="CA">NBA League Pass HD 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470689">
+    <display-name lang="CA">NHL Centre Ice HD 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470711">
+    <display-name lang="CA">NBA League Pass HD 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470717">
+    <display-name lang="CA">NHL Centre Ice HD 7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470720">
+    <display-name lang="CA">TVA Sports 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470723">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470732">
+    <display-name lang="CA">Sportsnet (Pacific)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470741">
+    <display-name lang="CA">Golf Channel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470748">
+    <display-name lang="CA">NHL Centre Ice HD 8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470753">
+    <display-name lang="CA">NBA League Pass HD 7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470758">
+    <display-name lang="CA">NHL Centre Ice HD 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470759">
+    <display-name lang="CA">NHL Centre Ice HD 12</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470771">
+    <display-name lang="CA">NHL Centre Ice 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470774">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470785">
+    <display-name lang="CA">NBA League Pass HD 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470793">
+    <display-name lang="CA">NHL Centre Ice HD 10</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470802">
+    <display-name lang="CA">Sportsnet One HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470811">
+    <display-name lang="CA">Sportsnet World</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470812">
+    <display-name lang="CA">Sportsnet East HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470813">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470817">
+    <display-name lang="CA">Sportsnet (Pacific) HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470825">
+    <display-name lang="CA">DirecTV - NHL Center Ice - NHLCI8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470827">
+    <display-name lang="CA">NBA LEAGUE PASS HD 0</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470869">
+    <display-name lang="CA">NBA League Pass HD 8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470870">
+    <display-name lang="CA">One Soccer</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470873">
+    <display-name lang="CA">Sportsnet One</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470886">
+    <display-name lang="CA">Golf Channel HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470896">
+    <display-name lang="CA">NBA League Pass HD 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470919">
+    <display-name lang="CA">NHL Centre Ice 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="470920">
+    <display-name lang="CA">Sportsnet World HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="471314">
+    <display-name lang="GB">Sky Sports Ultra HD 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="471315">
+    <display-name lang="GB">Sky Sports Ultra HD 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="471417">
+    <display-name lang="RU">Trace Toca [PT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/10/20251010022916668540_51.png"/>
+  </channel>
+  <channel id="471647">
+    <display-name lang="RU">Trace Sport Stars [RU]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/10/20251010021155993269_51.png"/>
+  </channel>
+  <channel id="471651">
+    <display-name lang="RU">Sky Sport Austria 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/12/20251012021416828471_39.png"/>
+  </channel>
+  <channel id="472376">
+    <display-name lang="RU">Maincast Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/17/20251017022011482924_23.png"/>
+  </channel>
+  <channel id="472551">
+    <display-name lang="SG">Hub Premier 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/16/20251016042513434778_47.png"/>
+  </channel>
+  <channel id="473658">
+    <display-name lang="RU">Setanta Sport+ [KZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/10/21/20251021024559048206_13.png"/>
+  </channel>
+  <channel id="476553">
+    <display-name lang="RU">Cosmote Sport 7 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109020937397545_95.png"/>
+  </channel>
+  <channel id="476555">
+    <display-name lang="RU">Cosmote Sport 6 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109021025821266_45.png"/>
+  </channel>
+  <channel id="476557">
+    <display-name lang="RU">Cosmote Sport 5 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109021215996637_11.png"/>
+  </channel>
+  <channel id="476559">
+    <display-name lang="RU">Cosmote Sport 8 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109021229004192_54.png"/>
+  </channel>
+  <channel id="476562">
+    <display-name lang="RU">Cosmote Sport 9 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109022105375264_13.png"/>
+  </channel>
+  <channel id="476563">
+    <display-name lang="RU">Cosmote Sport 3 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109022147421755_32.png"/>
+  </channel>
+  <channel id="476565">
+    <display-name lang="RU">Cosmote Sport 4 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109022239932402_48.png"/>
+  </channel>
+  <channel id="476569">
+    <display-name lang="RU">Cosmote Sport 1 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109022811690488_13.png"/>
+  </channel>
+  <channel id="476571">
+    <display-name lang="RU">Cosmote Sport 2 [GR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109022824066244_78.png"/>
+  </channel>
+  <channel id="476848">
+    <display-name lang="RU">SÝN Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109021302750363_53.png"/>
+  </channel>
+  <channel id="476850">
+    <display-name lang="RU">SÝN Sport 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109021629135758_19.png"/>
+  </channel>
+  <channel id="476860">
+    <display-name lang="RU">SÝN Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109023043252889_50.png"/>
+  </channel>
+  <channel id="478023">
+    <display-name lang="RU">Trace Gospel [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109022956908167_27.png"/>
+  </channel>
+  <channel id="478024">
+    <display-name lang="RU">Trace Vanilla [FR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/09/20251109023036329829_97.png"/>
+  </channel>
+  <channel id="478364">
+    <display-name lang="RU">Sportitalia Solo Calcio [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/17/20251117020714962803_43.png"/>
+  </channel>
+  <channel id="478568">
+    <display-name lang="RU">Sportdigital EDGE [DE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/12/20251112024859871673_36.png"/>
+  </channel>
+  <channel id="479604">
+    <display-name lang="MY">Astro Premier League 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="479605">
+    <display-name lang="MY">Astro Premier League 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="479757">
+    <display-name lang="RU">BOX SR Sport 8 Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/17/20251117021134440971_92.png"/>
+  </channel>
+  <channel id="479762">
+    <display-name lang="RU">BOX Sport 15 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/17/20251117021502890247_55.png"/>
+  </channel>
+  <channel id="479767">
+    <display-name lang="RU">BOX SR Sport 7 Live 4K HDR</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/17/20251117021933126718_93.png"/>
+  </channel>
+  <channel id="479768">
+    <display-name lang="RU">BOX Sport 14 Live HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/17/20251117022330805660_95.png"/>
+  </channel>
+  <channel id="480046">
+    <display-name lang="RU">Play Sports 6 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/24/20251124021150119985_37.png"/>
+  </channel>
+  <channel id="480048">
+    <display-name lang="RU">Play Sports 4 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122021618333222_31.png"/>
+  </channel>
+  <channel id="480049">
+    <display-name lang="RU">Play Sports 8 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/24/20251124021239601648_85.png"/>
+  </channel>
+  <channel id="480051">
+    <display-name lang="RU">Play Sports 5 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122022052930096_56.png"/>
+  </channel>
+  <channel id="480052">
+    <display-name lang="RU">Play Sports Golf [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122022313294882_86.png"/>
+  </channel>
+  <channel id="480054">
+    <display-name lang="RU">Play Sports 2 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120023328282741_62.png"/>
+  </channel>
+  <channel id="480055">
+    <display-name lang="RU">Play Sports 7 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/24/20251124022024331077_70.png"/>
+  </channel>
+  <channel id="480056">
+    <display-name lang="RU">Play Sports 3 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120023636358078_71.png"/>
+  </channel>
+  <channel id="480057">
+    <display-name lang="RU">Play Sports 1 [BE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120024142351752_86.png"/>
+  </channel>
+  <channel id="480197">
+    <display-name lang="RU">Now Sports 7</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122020741467997_37.png"/>
+  </channel>
+  <channel id="480198">
+    <display-name lang="RU">Now Sports 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122020744126774_64.png"/>
+  </channel>
+  <channel id="480199">
+    <display-name lang="RU">Now Sports 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122020746924280_38.png"/>
+  </channel>
+  <channel id="480200">
+    <display-name lang="RU">Now Sports 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122020749514027_50.png"/>
+  </channel>
+  <channel id="480201">
+    <display-name lang="RU">Now Sports 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122020752450180_77.png"/>
+  </channel>
+  <channel id="480202">
+    <display-name lang="RU">Now Sports 1</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122020755146434_12.png"/>
+  </channel>
+  <channel id="480203">
+    <display-name lang="RU">Now Sports 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122020954969247_15.png"/>
+  </channel>
+  <channel id="480213">
+    <display-name lang="RU">Now Sports Premier League</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120024210895465_94.png"/>
+  </channel>
+  <channel id="480214">
+    <display-name lang="RU">Now Sports Plus</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122023416019506_82.png"/>
+  </channel>
+  <channel id="480217">
+    <display-name lang="DE">Sky Sport 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="480351">
+    <display-name lang="RU">5Sport Live</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120021022948247_96.png"/>
+  </channel>
+  <channel id="480352">
+    <display-name lang="RU">Sony Sports Ten 5 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120021143106800_29.png"/>
+  </channel>
+  <channel id="480362">
+    <display-name lang="RU">Sony Sports Ten 3 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120022823422617_14.png"/>
+  </channel>
+  <channel id="480365">
+    <display-name lang="RU">Yes Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120023100328973_41.png"/>
+  </channel>
+  <channel id="480366">
+    <display-name lang="RU">Yes Sport 3</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120023103003713_92.png"/>
+  </channel>
+  <channel id="480367">
+    <display-name lang="RU">Yes Sport 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120023105678805_55.png"/>
+  </channel>
+  <channel id="480371">
+    <display-name lang="RU">beIN Sports 2 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120024234175346_45.png"/>
+  </channel>
+  <channel id="480373">
+    <display-name lang="RU">Sony Sports Ten 4 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120024441284466_74.png"/>
+  </channel>
+  <channel id="480374">
+    <display-name lang="RU">Sony Sports Ten 1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120024452461415_50.png"/>
+  </channel>
+  <channel id="480377">
+    <display-name lang="RU">Sony Sports Ten 2 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/20/20251120024555786177_35.png"/>
+  </channel>
+  <channel id="480584">
+    <display-name lang="RU">V Sport Ultra HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/22/20251122021031297100_41.png"/>
+  </channel>
+  <channel id="480587">
+    <display-name lang="RU">Canal+ Sport 3 [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208021039505444_71.png"/>
+  </channel>
+  <channel id="480588">
+    <display-name lang="RU">Canal+ Sport 7 [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208021201218479_95.png"/>
+  </channel>
+  <channel id="480591">
+    <display-name lang="RU">Canal+ Sport 5 [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208021314236394_76.png"/>
+  </channel>
+  <channel id="480595">
+    <display-name lang="RU">Canal+ Sport 6 [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208021725619319_91.png"/>
+  </channel>
+  <channel id="480597">
+    <display-name lang="RU">Canal+ Sport 4 [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208022029078828_48.png"/>
+  </channel>
+  <channel id="480599">
+    <display-name lang="RU">Canal+ Sport 8 [CZ]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208022200471191_16.png"/>
+  </channel>
+  <channel id="481243">
+    <display-name lang="RU">Premier Sports Asia</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/23/20251123021315981643_82.png"/>
+  </channel>
+  <channel id="481926">
+    <display-name lang="RU">Best4Sport TV</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/11/27/20251127022545600425_56.png"/>
+  </channel>
+  <channel id="482486">
+    <display-name lang="DE">Sky Sport 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482487">
+    <display-name lang="DE">Sport 13 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482659">
+    <display-name lang="RU">BeIN Sports 1 [HK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208021137630202_82.png"/>
+  </channel>
+  <channel id="482681">
+    <display-name lang="RU">BeIN Sports 3 [HK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208022521686724_56.png"/>
+  </channel>
+  <channel id="482687">
+    <display-name lang="RU">BeIN Sports 2 [HK]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/08/20251208022717485801_58.png"/>
+  </channel>
+  <channel id="482820">
+    <display-name lang="SG">Hub Sports 3 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482821">
+    <display-name lang="SG">Hub Premier 8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482822">
+    <display-name lang="SG">Hub Sports 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482823">
+    <display-name lang="SG">Hub Sports 7 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482824">
+    <display-name lang="SG">Hub Sports 8 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482827">
+    <display-name lang="SG">Hub Sports 1 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482829">
+    <display-name lang="SG">Hub Premier 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482830">
+    <display-name lang="SG">Hub Premier 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482831">
+    <display-name lang="SG">Hub Sports 5 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482832">
+    <display-name lang="SG">Hub Sports 4 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482833">
+    <display-name lang="SG">Hub Sports 6 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="483389">
+    <display-name lang="US">Ryz Sports Network</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="483391">
+    <display-name lang="US">Gulf Coast Sports and Entertainment Network</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="483394">
+    <display-name lang="US">Altitude Sports 2 HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="483396">
+    <display-name lang="US">HBCUGO SPORTS</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="483423">
+    <display-name lang="SG">Hub Premier 7</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/03/20251203042430607659_93.png"/>
+  </channel>
+  <channel id="483569">
+    <display-name lang="SG">beIN SPORTS 5 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/04/20251204042435678797_73.png"/>
+  </channel>
+  <channel id="483570">
+    <display-name lang="SG">beIN SPORTS 4 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/04/20251204042438097621_23.png"/>
+  </channel>
+  <channel id="484730">
+    <display-name lang="RU">beIN Sports Haber [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/09/20251209022424850563_50.png"/>
+  </channel>
+  <channel id="484879">
+    <display-name lang="US">MSG Sportsnet Zone 3 (MSG WNY)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="485021">
+    <display-name lang="RU">V Sport Football [SE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/11/20251211022013290692_26.png"/>
+  </channel>
+  <channel id="485024">
+    <display-name lang="RU">TV4 Tennis [SE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/11/20251211023154811666_16.png"/>
+  </channel>
+  <channel id="485027">
+    <display-name lang="RU">V Sport Extra [SE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/11/20251211023814921957_53.png"/>
+  </channel>
+  <channel id="485028">
+    <display-name lang="RU">V Sport Premium [SE]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/11/20251211023836518661_34.png"/>
+  </channel>
+  <channel id="485708">
+    <display-name lang="RU">beIN Sports 4 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/13/20251213021014839600_36.png"/>
+  </channel>
+  <channel id="485712">
+    <display-name lang="RU">beIN Sports 5 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/13/20251213021453595590_17.png"/>
+  </channel>
+  <channel id="485713">
+    <display-name lang="RU">Sportitalia [IT]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/13/20251213021509498664_33.png"/>
+  </channel>
+  <channel id="485719">
+    <display-name lang="RU">UzSport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/13/20251213022044039693_98.png"/>
+  </channel>
+  <channel id="485730">
+    <display-name lang="RU">beIN Sports 1 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/13/20251213023015452098_43.png"/>
+  </channel>
+  <channel id="485733">
+    <display-name lang="RU">beIN Sports 3 [TR]</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/13/20251213023215556121_85.png"/>
+  </channel>
+  <channel id="485735">
+    <display-name lang="US">NBC Sports Now</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="485881">
+    <display-name lang="MY">Astro Premier League 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="485882">
+    <display-name lang="MY">Astro Premier League 3</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="486169">
+    <display-name lang="RU">Velilla TV FIFA Club World Cup 2025 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/17/20251217021445615651_44.png"/>
+  </channel>
+  <channel id="486781">
+    <display-name lang="GB">TNT Sport BoxOffice HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="487496">
+    <display-name lang="DE">Sport 1 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="487630">
+    <display-name lang="RU">SÝN Sport 5</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/21/20251221021711021295_92.png"/>
+  </channel>
+  <channel id="487633">
+    <display-name lang="RU">SÝN Sport 4</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/21/20251221022505847555_11.png"/>
+  </channel>
+  <channel id="488103">
+    <display-name lang="RU">SÝN Sport 6</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/23/20251223021321996438_18.png"/>
+  </channel>
+  <channel id="488113">
+    <display-name lang="MY">Astro Premier League 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489130">
+    <display-name lang="US">SportsGrid</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489267">
+    <display-name lang="RU">Sky Sport Bundesliga 1 HD</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/28/20251228021022240071_11.png"/>
+  </channel>
+  <channel id="489284">
+    <display-name lang="RU">Best4Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/28/20251228022805888223_92.png"/>
+  </channel>
+  <channel id="489290">
+    <display-name lang="AU">10 Sport 2</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/28/20251228040226924831_50.png"/>
+  </channel>
+  <channel id="489304">
+    <display-name lang="SG">MOLA Sport (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489305">
+    <display-name lang="SG">EUROSPORT (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489335">
+    <display-name lang="SG">TRACE Sport Stars HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489350">
+    <display-name lang="SG">beIN SPORTS 2 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489363">
+    <display-name lang="SG">mio Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489364">
+    <display-name lang="SG">mio Sports 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489366">
+    <display-name lang="SG">Premier Sports</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489373">
+    <display-name lang="SG">beIN SPORTS (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489388">
+    <display-name lang="SG">beIN SPORTS 4 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489396">
+    <display-name lang="SG">Fight Sports (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489399">
+    <display-name lang="SG">beIN SPORTS 3 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="212824">
+    <display-name lang="DE">Sky Sport 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="212838">
+    <display-name lang="DE">Sky Sport 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="401577">
+    <display-name lang="DE">Sky Sport 1</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="405757">
+    <display-name lang="DE">Sky Sport Bundesliga 4</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450290">
+    <display-name lang="DE">MS Sport</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450299">
+    <display-name lang="DE">Sport 12 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450500">
+    <display-name lang="DE">Sport 3 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="453384">
+    <display-name lang="DE">Sky Sport 8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="456146">
+    <display-name lang="DE">Sky Sport 10</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="456554">
+    <display-name lang="DE">Sport 17 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463676">
+    <display-name lang="ZA">SS Football</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463698">
+    <display-name lang="ZA">SuperSport School HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463701">
+    <display-name lang="ZA">SS La Liga</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463743">
+    <display-name lang="ZA">RUGBY</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463746">
+    <display-name lang="ZA">SS Premier League</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463757">
+    <display-name lang="ZA">CRICKET</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463760">
+    <display-name lang="ZA">Trace Gospel</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463793">
+    <display-name lang="ZA">TRACE URBAN HD</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463795">
+    <display-name lang="ZA">TENNIS</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463807">
+    <display-name lang="ZA">TRACE Africa</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463810">
+    <display-name lang="ZA">GOLF</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463814">
+    <display-name lang="ZA">MOTORSPORT</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="473829">
+    <display-name lang="DE">Sky Sport Bundesliga 9</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="477005">
+    <display-name lang="DE">Sky Sport Bundesliga 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="478720">
+    <display-name lang="DE">Sky Sport 9</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="482693">
+    <display-name lang="DE">Sky Sport 7</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="489133">
+    <display-name lang="AU">Ten Sport</display-name>
+    <icon src="https://epg.pw/media/images/epg/2025/12/27/20251227040310421730_34.png"/>
+  </channel>
+  <channel id="212822">
+    <display-name lang="DE">Sky Sport Bundesliga 8</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="487461">
+    <display-name lang="VN">K+ SPORT2 (HD)</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="487462">
+    <display-name lang="VN">K+ SPORT2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450302">
+    <display-name lang="DE">Sport 10 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="450306">
+    <display-name lang="DE">Sport 11 - myTeamTV</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="487486">
+    <display-name lang="MY">Astro Premier League 5</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="446434">
+    <display-name lang="DE">Sky Sport Bundesliga 6</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="463516">
+    <display-name lang="DE">Sky Sport Bundesliga 2</display-name>
+    <icon src=""/>
+  </channel>
+  <channel id="212825">
+    <display-name lang="DE">Sky Sport Bundesliga 7</display-name>
+    <icon src=""/>
+  </channel>
