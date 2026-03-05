@@ -11,24 +11,27 @@ M3U_URL = "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/p
 OUTPUT_FILE = "live_events.m3u"
 LINK_STANDBY = "https://bwifi.my.id/live.mp4"
 
+# Kata kunci yang menandakan siaran ulang (Akan DIBUANG)
+REPLAY_KEYWORDS = ["highlight", "replay", "classic", "best of", "re-run", "siaran ulang", "arsip", "magazine", "preview"]
+
 def get_wib_time():
     """Waktu saat ini di WIB (+7)"""
     return datetime.utcnow() + timedelta(hours=7)
 
-def get_logical_date(dt):
-    """Hari baru dimulai jam 06:00 WIB"""
-    if dt.hour < 6:
-        return (dt - timedelta(days=1)).date()
-    return dt.date()
-
-def bersihkan_nama(nama):
-    """Pembersih nama untuk Auto-Match channel"""
-    return re.sub(r'[^a-z0-9]', '', str(nama).lower())
-
-def is_target_event(title):
-    """Filter ketat: Hanya 'vs' dan 'motogp'"""
+def is_fresh_live(title):
+    """
+    MEMASTIKAN INI LIVE ASLI:
+    1. Harus mengandung 'vs' atau 'motogp'.
+    2. Tidak boleh mengandung kata siaran ulang/highlight.
+    """
     if not title: return False
     t = title.lower()
+    
+    # Cek apakah ada kata siaran ulang
+    if any(k in t for k in REPLAY_KEYWORDS):
+        return False
+        
+    # Cek apakah ini pertandingan (vs) atau MotoGP
     return re.search(r'\bvs\b', t) or "motogp" in t
 
 def main():
@@ -44,9 +47,8 @@ def main():
     epg_channels_dict = {ch.get("id"): ch.findtext("display-name").strip() 
                          for ch in root.findall("channel") if ch.findtext("display-name")}
 
-    print("2. Mencari jadwal (Filter: WIB Cycle 06.00-05.59)...")
+    print("2. Mencari siaran LIVE ASLI (Tanpa Highlight/Replay)...")
     now = get_wib_time()
-    hari_ini_logis = get_logical_date(now)
     live_events = {} 
 
     for prog in root.findall("programme"):
@@ -58,25 +60,28 @@ def main():
             stop_dt = datetime.strptime(stop_str[:14], "%Y%m%d%H%M%S")
         except ValueError: continue
 
-        # LOGIKA: Hanya ambil acara yang masuk siklus 'Hari Ini' (06:00 - 05:59)
-        # DAN acara tersebut BELUM SELESAI (stop_dt > now)
-        if get_logical_date(start_dt) == hari_ini_logis and stop_dt > now:
-            ch_id = prog.get("channel")
-            ch_name_epg = epg_channels_dict.get(ch_id, "")
+        # KRITERIA LIVE MURNI:
+        # 1. Sedang tayang sekarang atau H-5 menit.
+        # 2. Judul lolos filter is_fresh_live (Tidak ada kata 'highlight' dll).
+        if start_dt - timedelta(minutes=5) <= now <= stop_dt:
             title = prog.findtext("title") or ""
             
-            if ch_name_epg and is_target_event(title):
-                if ch_name_epg not in live_events: live_events[ch_name_epg] = []
-                live_events[ch_name_epg].append({"title": title, "start": start_dt, "stop": stop_dt})
+            if is_fresh_live(title):
+                ch_id = prog.get("channel")
+                ch_name_epg = epg_channels_dict.get(ch_id, "")
+                
+                if ch_name_epg:
+                    if ch_name_epg not in live_events: live_events[ch_name_epg] = []
+                    live_events[ch_name_epg].append({"title": title, "start": start_dt, "stop": stop_dt})
 
-    print("\n3. Download M3U & Meracik...")
+    print("\n3. Download M3U & Sinkronisasi...")
     try:
         r_m3u = requests.get(M3U_URL, timeout=30)
         m3u_lines = r_m3u.text.splitlines()
     except: return
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write('#EXTM3U name="🔴 LIVE SPORTS TODAY"\n')
+        f.write('#EXTM3U name="🔴 PURE LIVE SPORTS"\n')
         channel_block = [] 
         for line in m3u_lines:
             if not (line := line.strip()): continue
@@ -85,22 +90,25 @@ def main():
                 stream_asli = line
                 extinf = next((t for t in channel_block if t.startswith("#EXTINF")), "")
                 if extinf:
-                    m3u_name = bersihkan_nama(extinf.split(',')[-1])
+                    m3u_name = re.sub(r'[^a-z0-9]', '', extinf.split(',')[-1].lower())
                     for epg_name, daftar in live_events.items():
-                        if bersihkan_nama(epg_name) in m3u_name or m3u_name in bersihkan_nama(epg_name):
+                        epg_name_clean = re.sub(r'[^a-z0-9]', '', epg_name.lower())
+                        if epg_name_clean in m3u_name or m3u_name in epg_name_clean:
                             for acr in daftar:
-                                # Switch link 5 menit sebelum kick-off
-                                link = stream_asli if now >= acr["start"] - timedelta(minutes=5) else LINK_STANDBY
-                                stat = "[LIVE]" if now >= acr["start"] - timedelta(minutes=5) else "[STANDBY]"
+                                # Jika sudah masuk menit pertandingan, pakai link asli, jika belum pakai standby.
+                                link = stream_asli if now >= acr["start"] - timedelta(minutes=2) else LINK_STANDBY
                                 jam = f"{acr['start'].strftime('%H:%M')}-{acr['stop'].strftime('%H:%M')} WIB"
                                 
+                                # Membersihkan group-title lama dan memasukkan ke kategori LIVE.
                                 clean_extinf = re.sub(r'group-title="[^"]*"', '', extinf.rsplit(',', 1)[0]).strip()
-                                f.write(f'{clean_extinf} group-title="🔴 LIVE TODAY", 🔴 {stat} {acr["title"]} ({jam})\n')
+                                f.write(f'{clean_extinf} group-title="🔴 LIVE SEKARANG", 🔴 [LIVE] {acr["title"]} ({jam})\n')
+                                
+                                # Tulis opsi DRM/Kodi.
                                 for blk in [b for b in channel_block if not b.startswith("#EXTINF")]: f.write(blk + "\n")
                                 f.write(link + "\n")
                             break
                 channel_block = []
-    print(f"SELESAI ✔ → {OUTPUT_FILE} diperbarui.")
+    print(f"SELESAI ✔ → {OUTPUT_FILE} hanya berisi siaran LIVE murni.")
 
 if __name__ == "__main__":
     main()
