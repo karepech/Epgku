@@ -2,9 +2,7 @@ name: Generate LIVE EVENT M3U
 
 on:
   schedule:
-    # Mengecek jadwal setiap 15 menit agar fitur Standby & Auto-Switch berjalan presisi
     - cron: "*/15 * * * *"
-  # Memungkinkan Anda menjalankan script secara manual lewat tombol di GitHub
   workflow_dispatch:
 
 jobs:
@@ -13,7 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
+        # Tambahkan fetch-depth 0 agar proses pull/rebase tidak error
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -34,5 +35,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add live_event/live_events.m3u
-          git commit -m "Auto update 🔴 LIVE & UPCOMING M3U (15 Menit)" || echo "Tidak ada perubahan file"
+          git commit -m "Auto update 🔴 LIVE & UPCOMING M3U" || echo "Tidak ada perubahan file"
+          # Baris sakti untuk mencegah error "rejected"
+          git pull --rebase origin main
           git push
