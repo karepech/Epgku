@@ -13,15 +13,16 @@ OUTPUT_FILE = "live_events.m3u"
 # Link video Standby/Trailer Anda
 LINK_STANDBY = "https://bwifi.my.id/live.mp4"
 
-# Kata kunci filter SPORTS
+# Kata kunci SUPER KETAT (Hanya Bola, Badminton, dan MotoGP)
+# Kata "vs" ditambahkan karena judul pertandingan bola/badminton sering kali hanya "Tim A vs Tim B"
 SPORT_KEYWORDS = [
-    "sport", "sports", "football", "soccer", "match", "liga", "league", 
-    "premier", "champions", "uefa", "fifa", "afc", "caf", "conmebol",
-    "bundesliga", "la liga", "serie a", "ligue", "mls", "eredivisie",
-    "basket", "nba", "wnba", "motogp", "moto gp", "formula", "f1", "race",
-    "tennis", "badminton", "bwf", "volley", "volleyball", "ufc", "boxing", 
-    "mma", "wrestling", "golf", "pga", "cricket", "rugby", "nhl",
-    "olympic", "sea games", "asian games"
+    # KATA KUNCI BOLA
+    "football", "soccer", "liga", "league", "premier", "champions", "uefa", "fifa", 
+    "afc", "bundesliga", "la liga", "serie a", "ligue 1", "eredivisie", "vs", "timnas", "fa cup", "copa",
+    # KATA KUNCI BADMINTON
+    "badminton", "bwf", "bulutangkis", "bulu tangkis", "thomas", "uber", "sudirman",
+    # KATA KUNCI MOTOGP
+    "motogp", "moto gp", "moto2", "moto3", "sprint race"
 ]
 
 def get_wib_time():
@@ -38,10 +39,10 @@ def bersihkan_nama(nama):
     """Pembersih nama untuk Auto-Match channel"""
     return re.sub(r'[^a-z0-9]', '', str(nama).lower())
 
-def is_sport(text):
-    """Mengecek kata kunci olahraga"""
-    if not text: return False
-    return any(k in text.lower() for k in SPORT_KEYWORDS)
+def is_target_sport(title):
+    """Mengecek apakah JUDUL ACARA mengandung kata kunci target"""
+    if not title: return False
+    return any(k in title.lower() for k in SPORT_KEYWORDS)
 
 def main():
     print("1. Download EPG...")
@@ -60,7 +61,7 @@ def main():
         if disp is not None and disp.text:
             epg_channels_dict[ch_id] = disp.text.strip()
 
-    print("2. Mencari jadwal LIVE & UPCOMING (Khusus Sports)...")
+    print("2. Mencari jadwal (Khusus Bola, Badminton, MotoGP)...")
     now = get_wib_time()
     hari_ini_logis = get_logical_date(now)
     epg_events = {} 
@@ -80,10 +81,10 @@ def main():
         if stop_dt > now:
             ch_id = prog.get("channel")
             ch_name_epg = epg_channels_dict.get(ch_id, "")
-            title = prog.findtext("title") or "Live Event"
+            title = prog.findtext("title") or ""
             
-            # Filter 2: Pastikan ini adalah SPORTS
-            if ch_name_epg and (is_sport(title) or is_sport(ch_name_epg)):
+            # Filter 2: HANYA CEK JUDULNYA SAJA dengan kata kunci super ketat
+            if ch_name_epg and is_target_sport(title):
                 event_info = {
                     "title": title,
                     "start": start_dt,
@@ -153,6 +154,7 @@ def main():
                                     
                                 jam_mulai = start_dt.strftime("%H:%M")
                                 jam_selesai = acara["stop"].strftime("%H:%M")
+                                # Menambahkan WIB pada jam
                                 judul = f"🔴 {status_tayang} [{jam_mulai}-{jam_selesai} WIB] {acara['title']}"
                                 
                                 parts = extinf_line.rsplit(',', 1)
@@ -173,7 +175,7 @@ def main():
                             
                 channel_block = []
 
-    print(f"\nSELESAI ✔ → File '{OUTPUT_FILE}' sukses dibuat!")
+    print(f"\nSELESAI ✔ → File '{OUTPUT_FILE}' sukses dibuat dan telah disaring ketat!")
 
 if __name__ == "__main__":
     main()
