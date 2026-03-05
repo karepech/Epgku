@@ -20,16 +20,14 @@ REPLAY_KEYWORDS = ["highlight", "replay", "classic", "best of", "re-run", "siara
 TARGET_SPORTS = ["motogp", "moto2", "moto3", "badminton", "bwf", "futsal", "voli", "volley", "basket", "nba", "fiba"]
 SPORTS_CHANNELS = ["sport", "bein", "spotv", "champions", "premier", "euro", "hub", "arena", "astro"]
 
-# DAFTAR LIGA EROPA UNTUK LOGIKA JAM
+# DAFTAR LIGA EROPA UNTUK LOGIKA JAM (Buang jika tayang jam 06:00 - 18:59 WIB)
 EURO_LEAGUES = ["premier", "laliga", "la liga", "bundesliga", "serie a", "ligue 1", "champions", "europa", "eredivisie", "scottish", "fa cup"]
 
 def is_sports_channel(channel_name):
-    """Gembok Channel: Pastikan channel memiliki kata kunci olahraga"""
     if not channel_name: return False
     return any(k in channel_name.lower() for k in SPORTS_CHANNELS)
 
 def is_fresh_live(prog, start_wib):
-    """Filter Ketat: Anti Siaran Ulang & Logika Jam Eropa"""
     if prog.find("previously-shown") is not None:
         return False
 
@@ -39,10 +37,9 @@ def is_fresh_live(prog, start_wib):
     
     if any(k in t for k in REPLAY_KEYWORDS): return False
 
-    # 🛑 ATURAN JAM HARAM LIGA EROPA (06:00 Pagi - 18:59 Sore WIB)
+    # ATURAN JAM HARAM LIGA EROPA (06:00 Pagi - 18:59 Sore WIB)
     is_euro_league = any(liga in t for liga in EURO_LEAGUES)
     if is_euro_league:
-        # Jika tayang di siang/sore hari WIB, itu pasti siaran ulang! Buang!
         if 6 <= start_wib.hour < 19:
             return False 
 
@@ -82,7 +79,7 @@ def main():
         if ch_name and is_sports_channel(ch_name.strip()):
             epg_channels_dict[ch.get("id")] = ch_name.strip()
 
-    print("2. Mencari Acara LIVE Asli (Membuang Liga Eropa Siang Hari)...")
+    print("2. Mencari Acara LIVE Asli...")
     now_wib = datetime.utcnow() + timedelta(hours=7)
     live_events = {} 
 
@@ -106,10 +103,13 @@ def main():
         m3u_lines = r_m3u.text.splitlines()
     except: return
 
-    print("4. Meracik M3U Tanpa Channel Nyasar...")
+    print("4. Meracik M3U...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U name="🔴 PURE LIVE SPORTS"\n')
+        
         channel_block = [] 
+        jumlah_channel_dibuat = 0 # Variabel untuk menghitung channel yang berhasil masuk
+        
         for line in m3u_lines:
             if not (line := line.strip()): continue
             if line.startswith("#"): channel_block.append(line)
@@ -119,8 +119,6 @@ def main():
                 if extinf:
                     m3u_name_asli = extinf.split(',')[-1].strip()
                     
-                    # GEMBOK: Jika channel M3U bukan channel olahraga, jangan proses!
-                    # Ini akan mencegah ION, &tv MOVIES, MNCTV kemasukan jadwal olahraga.
                     if is_sports_channel(m3u_name_asli):
                         m3u_name_clean = re.sub(r'[^a-z0-9]', '', m3u_name_asli.lower())
                         m3u_number = extract_channel_number(m3u_name_clean)
@@ -146,10 +144,22 @@ def main():
                                 for blk in [b for b in channel_block if not b.startswith("#EXTINF")]: 
                                     f.write(blk + "\n")
                                 f.write(link_final + "\n")
+                                
+                                jumlah_channel_dibuat += 1 # Tambah 1 jika ada pertandingan yang berhasil masuk
                                 break 
                                 
                 channel_block = []
-    print(f"SELESAI ✔ → Bersih dari siaran siang palsu & channel aneh!")
+                
+        # ==========================================
+        # FITUR FALLBACK / ANTI-ERROR (JIKA KOSONG)
+        # ==========================================
+        if jumlah_channel_dibuat == 0:
+            print("ℹ️ Tidak ada jadwal live, membuat Channel Info Fallback...")
+            # Buat 1 channel pemberitahuan agar link M3U tidak dianggap error
+            f.write('#EXTINF:-1 tvg-id="" tvg-name="INFO" tvg-logo="" group-title="ℹ️ INFORMASI", ℹ️ BELUM ADA SIARAN LIVE SAAT INI\n')
+            f.write(f'{LINK_STANDBY}\n')
+
+    print(f"SELESAI ✔ → {jumlah_channel_dibuat} siaran live ditemukan. (Jika 0, channel info dibuat).")
 
 if __name__ == "__main__":
     main()
