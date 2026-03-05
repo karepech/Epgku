@@ -14,15 +14,18 @@ def main():
         
         with open("DAFTAR_MAPPING.txt", "w", encoding="utf-8") as f:
             f.write("="*50 + "\n")
-            f.write("📋 DAFTAR ID CHANNEL DI EPG (Taruh di Sebelah KIRI)\n")
+            f.write("📋 DAFTAR NAMA CHANNEL DI EPG (Taruh di Sebelah KIRI)\n")
             f.write("="*50 + "\n")
-            epg_ids = set()
-            for ch in root.findall('channel'):
-                epg_ids.add(ch.get('id'))
             
-            # Format langsung siap copas untuk script utama
-            for cid in sorted(epg_ids):
-                f.write(f'    "{cid}": "TULIS_NAMA_M3U_DISINI",\n')
+            epg_names = set()
+            for ch in root.findall('channel'):
+                disp = ch.find('display-name')
+                if disp is not None and disp.text:
+                    epg_names.add(disp.text.strip())
+            
+            # Format langsung siap copas
+            for name in sorted(epg_names):
+                f.write(f'    "{name}": "TULIS_NAMA_M3U_DISINI",\n')
 
             f.write("\n\n" + "="*50 + "\n")
             f.write("📺 DAFTAR NAMA CHANNEL DI M3U (Taruh di Sebelah KANAN)\n")
@@ -39,7 +42,7 @@ def main():
                 if nama: # Abaikan yang kosong
                     f.write(f'{nama}\n')
 
-        print("Selesai! File DAFTAR_MAPPING.txt berhasil dibuat.")
+        print("Selesai! File DAFTAR_MAPPING.txt berhasil dibuat berdasar Nama Channel.")
     except Exception as e:
         print(f"Terjadi kesalahan: {e}")
 
