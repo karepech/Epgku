@@ -2,7 +2,7 @@ name: Generate LIVE EVENT M3U
 
 on:
   schedule:
-    # Berjalan setiap 30 menit sekali agar cepat mendeteksi pertandingan baru
+    # Berjalan otomatis setiap 30 menit
     - cron: "*/30 * * * *"
   workflow_dispatch:
 
@@ -23,30 +23,16 @@ jobs:
         run: |
           pip install requests
 
-      - name: Jalankan Script Live M3U
-        # Pindah ke folder live_event lalu jalankan script
-        run: |
-          cd live_event
-          python generate_live.py
-
-      - name: Commit & Push File M3U
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add live_event/live_events.m3u
-          git commit -m "Auto update 🔴 LIVE SPORTS M3U" || echo "Tidak ada perubahan live event"
-          git push
-
-- name: Jalankan Script Live M3U & Mapping
+      - name: Jalankan Script Live M3U & Bantu Mapping
         run: |
           cd live_event
           python generate_live.py
           python bantu_mapping.py
 
-      - name: Commit & Push File M3U
+      - name: Commit & Push File M3U & TXT
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add live_event/live_events.m3u live_event/DAFTAR_MAPPING.txt
-          git commit -m "Auto update 🔴 LIVE SPORTS & Mapping" || echo "Tidak ada perubahan"
+          git commit -m "Auto update 🔴 LIVE SPORTS & file Mapping" || echo "Tidak ada perubahan file"
           git push
