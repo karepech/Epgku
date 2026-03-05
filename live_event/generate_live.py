@@ -12,24 +12,23 @@ OUTPUT_FILE = "live_events.m3u"
 LINK_STANDBY = "https://bwifi.my.id/live.mp4"
 
 def get_wib_time():
+    """Waktu saat ini di WIB (+7)"""
     return datetime.utcnow() + timedelta(hours=7)
 
 def get_logical_date(dt):
+    """Hari baru dimulai jam 06:00 WIB"""
     if dt.hour < 6:
         return (dt - timedelta(days=1)).date()
     return dt.date()
 
 def bersihkan_nama(nama):
+    """Pembersih nama untuk Auto-Match channel"""
     return re.sub(r'[^a-z0-9]', '', str(nama).lower())
 
 def is_target_event(title):
-    """
-    FILTER SUPER KETAT:
-    Hanya menerima jika ada kata 'vs' (Bola/Badminton) atau 'motogp'
-    """
+    """Filter ketat: Hanya 'vs' dan 'motogp'"""
     if not title: return False
     t = title.lower()
-    # Cek apakah ada kata 'vs' yang berdiri sendiri atau kata 'motogp'
     return re.search(r'\bvs\b', t) or "motogp" in t
 
 def main():
@@ -39,114 +38,69 @@ def main():
         r_epg.raise_for_status()
         root = ET.fromstring(r_epg.content)
     except Exception as e:
-        print(f"❌ Gagal memuat EPG: {e}")
+        print(f"❌ Gagal: {e}")
         return
 
-    epg_channels_dict = {}
-    for ch in root.findall("channel"):
-        ch_id = ch.get("id")
-        disp = ch.find("display-name")
-        if disp is not None and disp.text:
-            epg_channels_dict[ch_id] = disp.text.strip()
+    epg_channels_dict = {ch.get("id"): ch.findtext("display-name").strip() 
+                         for ch in root.findall("channel") if ch.findtext("display-name")}
 
-    print("2. Mencari jadwal (Hanya 'vs' dan 'motogp')...")
+    print("2. Mencari jadwal (Filter: WIB Cycle 06.00-05.59)...")
     now = get_wib_time()
     hari_ini_logis = get_logical_date(now)
-    epg_events = {} 
+    live_events = {} 
 
     for prog in root.findall("programme"):
-        start_str = prog.get("start")
-        stop_str = prog.get("stop")
+        start_str, stop_str = prog.get("start"), prog.get("stop")
         if not start_str or not stop_str: continue
 
         try:
             start_dt = datetime.strptime(start_str[:14], "%Y%m%d%H%M%S")
             stop_dt = datetime.strptime(stop_str[:14], "%Y%m%d%H%M%S")
-        except ValueError:
-            continue
+        except ValueError: continue
 
-        if stop_dt > now:
+        # LOGIKA: Hanya ambil acara yang masuk siklus 'Hari Ini' (06:00 - 05:59)
+        # DAN acara tersebut BELUM SELESAI (stop_dt > now)
+        if get_logical_date(start_dt) == hari_ini_logis and stop_dt > now:
             ch_id = prog.get("channel")
             ch_name_epg = epg_channels_dict.get(ch_id, "")
             title = prog.findtext("title") or ""
             
-            # CEK FILTER VS & MOTOGP
             if ch_name_epg and is_target_event(title):
-                event_info = {
-                    "title": title,
-                    "start": start_dt,
-                    "stop": stop_dt,
-                    "logical_date": get_logical_date(start_dt)
-                }
-                if ch_name_epg not in epg_events:
-                    epg_events[ch_name_epg] = []
-                epg_events[ch_name_epg].append(event_info)
+                if ch_name_epg not in live_events: live_events[ch_name_epg] = []
+                live_events[ch_name_epg].append({"title": title, "start": start_dt, "stop": stop_dt})
 
-    print("\n3. Download M3U playlist25...")
+    print("\n3. Download M3U & Meracik...")
     try:
         r_m3u = requests.get(M3U_URL, timeout=30)
-        r_m3u.raise_for_status()
         m3u_lines = r_m3u.text.splitlines()
-    except Exception as e:
-        print(f"❌ Gagal download M3U: {e}")
-        return
+    except: return
 
-    print("4. Meracik M3U Super Filter...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write('#EXTM3U name="🔴 LIVE & UPCOMING SPORTS"\n')
-
+        f.write('#EXTM3U name="🔴 LIVE SPORTS TODAY"\n')
         channel_block = [] 
         for line in m3u_lines:
-            line = line.strip()
-            if not line: continue
-
-            if line.startswith("#"):
-                channel_block.append(line)
+            if not (line := line.strip()): continue
+            if line.startswith("#"): channel_block.append(line)
             elif line.startswith("http"):
-                stream_url_asli = line
-                extinf_idx = -1
-                extinf_line = ""
-                for i, tag in enumerate(channel_block):
-                    if tag.startswith("#EXTINF"):
-                        extinf_idx = i
-                        extinf_line = tag
-                        break
-                
-                if extinf_idx != -1:
-                    m3u_channel_name = extinf_line.split(',')[-1].strip()
-                    nama_m3u_bersih = bersihkan_nama(m3u_channel_name)
-                    
-                    for epg_name, daftar_acara in epg_events.items():
-                        nama_epg_bersih = bersihkan_nama(epg_name)
-                        
-                        if nama_epg_bersih and nama_m3u_bersih and (nama_epg_bersih in nama_m3u_bersih or nama_m3u_bersih in nama_epg_bersih):
-                            for acara in daftar_acara:
-                                start_dt = acara["start"]
-                                kategori = "🔴 LIVE HARI INI" if acara["logical_date"] == hari_ini_logis else "📅 UPCOMING SPORTS"
+                stream_asli = line
+                extinf = next((t for t in channel_block if t.startswith("#EXTINF")), "")
+                if extinf:
+                    m3u_name = bersihkan_nama(extinf.split(',')[-1])
+                    for epg_name, daftar in live_events.items():
+                        if bersihkan_nama(epg_name) in m3u_name or m3u_name in bersihkan_nama(epg_name):
+                            for acr in daftar:
+                                # Switch link 5 menit sebelum kick-off
+                                link = stream_asli if now >= acr["start"] - timedelta(minutes=5) else LINK_STANDBY
+                                stat = "[LIVE]" if now >= acr["start"] - timedelta(minutes=5) else "[STANDBY]"
+                                jam = f"{acr['start'].strftime('%H:%M')}-{acr['stop'].strftime('%H:%M')} WIB"
                                 
-                                if now >= start_dt - timedelta(minutes=5):
-                                    link_final = stream_url_asli
-                                    status = "[LIVE]"
-                                else:
-                                    link_final = LINK_STANDBY
-                                    status = "[STANDBY]"
-                                    
-                                jam = f"{start_dt.strftime('%H:%M')}-{acara['stop'].strftime('%H:%M')} WIB"
-                                judul_final = f"🔴 {status} [{jam}] > {acara['title']}"
-                                
-                                parts = extinf_line.rsplit(',', 1)
-                                if len(parts) == 2:
-                                    info_kiri = re.sub(r'group-title="[^"]*"', '', parts[0]).strip()
-                                    new_extinf = f'{info_kiri} group-title="{kategori}", {judul_final}'
-                                    channel_block[extinf_idx] = new_extinf
-                                
-                                for block_line in channel_block:
-                                    f.write(block_line + "\n")
-                                f.write(link_final + "\n")
-                            break 
+                                clean_extinf = re.sub(r'group-title="[^"]*"', '', extinf.rsplit(',', 1)[0]).strip()
+                                f.write(f'{clean_extinf} group-title="🔴 LIVE TODAY", 🔴 {stat} {acr["title"]} ({jam})\n')
+                                for blk in [b for b in channel_block if not b.startswith("#EXTINF")]: f.write(blk + "\n")
+                                f.write(link + "\n")
+                            break
                 channel_block = []
-
-    print(f"\nSELESAI ✔ → File '{OUTPUT_FILE}' sudah difilter sangat ketat!")
+    print(f"SELESAI ✔ → {OUTPUT_FILE} diperbarui.")
 
 if __name__ == "__main__":
     main()
