@@ -153,7 +153,7 @@ def main():
                                     
                                 jam_mulai = start_dt.strftime("%H:%M")
                                 jam_selesai = acara["stop"].strftime("%H:%M")
-                                judul = f"🔴 {status_tayang} [{jam_mulai}-{jam_selesai}] {acara['title']}"
+                                judul = f"🔴 {status_tayang} [{jam_mulai}-{jam_selesai} WIB] {acara['title']}"
                                 
                                 parts = extinf_line.rsplit(',', 1)
                                 if len(parts) == 2:
