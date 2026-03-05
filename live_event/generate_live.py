@@ -10,12 +10,38 @@ EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/refs/heads/main/epg_
 M3U_URL = "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"
 OUTPUT_FILE = "live_events.m3u"
 
+# Link video Standby/Trailer Anda
+LINK_STANDBY = "https://bwifi.my.id/live.mp4"
+
+# Kata kunci filter SPORTS
+SPORT_KEYWORDS = [
+    "sport", "sports", "football", "soccer", "match", "liga", "league", 
+    "premier", "champions", "uefa", "fifa", "afc", "caf", "conmebol",
+    "bundesliga", "la liga", "serie a", "ligue", "mls", "eredivisie",
+    "basket", "nba", "wnba", "motogp", "moto gp", "formula", "f1", "race",
+    "tennis", "badminton", "bwf", "volley", "volleyball", "ufc", "boxing", 
+    "mma", "wrestling", "golf", "pga", "cricket", "rugby", "nhl",
+    "olympic", "sea games", "asian games"
+]
+
 def get_wib_time():
+    """Waktu saat ini di WIB (+7)"""
     return datetime.utcnow() + timedelta(hours=7)
 
+def get_logical_date(dt):
+    """Ganti hari dihitung mulai jam 06:00 WIB pagi"""
+    if dt.hour < 6:
+        return (dt - timedelta(days=1)).date()
+    return dt.date()
+
 def bersihkan_nama(nama):
-    """Menghapus spasi/simbol untuk mencocokkan nama channel"""
+    """Pembersih nama untuk Auto-Match channel"""
     return re.sub(r'[^a-z0-9]', '', str(nama).lower())
+
+def is_sport(text):
+    """Mengecek kata kunci olahraga"""
+    if not text: return False
+    return any(k in text.lower() for k in SPORT_KEYWORDS)
 
 def main():
     print("1. Download EPG...")
@@ -27,7 +53,6 @@ def main():
         print(f"❌ Gagal memuat EPG: {e}")
         return
 
-    # Menerjemahkan ID EPG menjadi Nama EPG
     epg_channels_dict = {}
     for ch in root.findall("channel"):
         ch_id = ch.get("id")
@@ -35,12 +60,10 @@ def main():
         if disp is not None and disp.text:
             epg_channels_dict[ch_id] = disp.text.strip()
 
-    print("2. Mencari acara LIVE untuk 12 Jam ke depan...")
+    print("2. Mencari jadwal LIVE & UPCOMING (Khusus Sports)...")
     now = get_wib_time()
-    batas_waktu = now + timedelta(hours=12) # Ambil jadwal sampai 12 jam ke depan
-    
-    # Format Dictionary: { "Nama Channel": ["Acara 1", "Acara 2"] }
-    live_epg_channels = {} 
+    hari_ini_logis = get_logical_date(now)
+    epg_events = {} 
 
     for prog in root.findall("programme"):
         start_str = prog.get("start")
@@ -53,24 +76,23 @@ def main():
         except ValueError:
             continue
 
-        # Filter: Sedang tayang SEKARANG atau AKAN TAYANG dalam 12 jam ke depan
-        if now <= stop_dt and start_dt <= batas_waktu:
+        # Filter 1: Ambil yang belum selesai (stop_dt > now)
+        if stop_dt > now:
             ch_id = prog.get("channel")
             ch_name_epg = epg_channels_dict.get(ch_id, "")
             title = prog.findtext("title") or "Live Event"
             
-            if ch_name_epg:
-                # Format Jam Tayang menjadi [HH:MM - HH:MM WIB]
-                jam_mulai = start_dt.strftime("%H:%M")
-                jam_selesai = stop_dt.strftime("%H:%M")
-                judul_lengkap = f"[{jam_mulai}-{jam_selesai} WIB] {title}"
-
-                if ch_name_epg not in live_epg_channels:
-                    live_epg_channels[ch_name_epg] = []
-                live_epg_channels[ch_name_epg].append(judul_lengkap)
-
-    if not live_epg_channels:
-        print("ℹ️ Tidak ada siaran olahraga dalam 12 jam ke depan.")
+            # Filter 2: Pastikan ini adalah SPORTS
+            if ch_name_epg and (is_sport(title) or is_sport(ch_name_epg)):
+                event_info = {
+                    "title": title,
+                    "start": start_dt,
+                    "stop": stop_dt,
+                    "logical_date": get_logical_date(start_dt)
+                }
+                if ch_name_epg not in epg_events:
+                    epg_events[ch_name_epg] = []
+                epg_events[ch_name_epg].append(event_info)
 
     print("\n3. Download M3U playlist25...")
     try:
@@ -81,9 +103,9 @@ def main():
         print(f"❌ Gagal download M3U: {e}")
         return
 
-    print("4. Mencocokkan Data & Membuat File M3U...")
+    print("4. Meracik M3U (Auto-Match & Link Standby)...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write('#EXTM3U name="🔴 LIVE SPORTS"\n')
+        f.write('#EXTM3U name="🔴 LIVE & UPCOMING SPORTS"\n')
 
         channel_block = [] 
         for line in m3u_lines:
@@ -93,7 +115,7 @@ def main():
             if line.startswith("#"):
                 channel_block.append(line)
             elif line.startswith("http"):
-                stream_url = line
+                stream_url_asli = line
                 
                 extinf_idx = -1
                 extinf_line = ""
@@ -107,30 +129,47 @@ def main():
                     m3u_channel_name = extinf_line.split(',')[-1].strip()
                     nama_m3u_bersih = bersihkan_nama(m3u_channel_name)
                     
-                    # Cek apakah nama channel M3U ini punya jadwal di EPG
-                    for epg_name, daftar_acara in live_epg_channels.items():
+                    for epg_name, daftar_acara in epg_events.items():
                         nama_epg_bersih = bersihkan_nama(epg_name)
                         
-                        # Pencocokan otomatis (Auto-Match)
                         if nama_epg_bersih and nama_m3u_bersih and (nama_epg_bersih in nama_m3u_bersih or nama_m3u_bersih in nama_epg_bersih):
                             
-                            # Jika cocok, buatkan baris M3U untuk SETIAP acara yang ada di channel ini
                             for acara in daftar_acara:
+                                start_dt = acara["start"]
+                                
+                                # Kategori Hari
+                                if acara["logical_date"] == hari_ini_logis:
+                                    kategori = "🔴 LIVE HARI INI"
+                                else:
+                                    kategori = "📅 UPCOMING SPORTS"
+                                    
+                                # Logika Standby (Buka link asli 5 menit sebelum mulai)
+                                if now >= start_dt - timedelta(minutes=5):
+                                    link_final = stream_url_asli
+                                    status_tayang = "[LIVE]"
+                                else:
+                                    link_final = LINK_STANDBY
+                                    status_tayang = "[STANDBY]"
+                                    
+                                jam_mulai = start_dt.strftime("%H:%M")
+                                jam_selesai = acara["stop"].strftime("%H:%M")
+                                judul = f"🔴 {status_tayang} [{jam_mulai}-{jam_selesai}] {acara['title']}"
+                                
                                 parts = extinf_line.rsplit(',', 1)
                                 if len(parts) == 2:
-                                    new_extinf = f'{parts[0]} group-title="🔴 LIVE EVENT",🔴 {acara}'
+                                    info_kiri = re.sub(r'group-title="[^"]*"', '', parts[0]).strip()
+                                    new_extinf = f'{info_kiri} group-title="{kategori}", {judul}'
                                 else:
-                                    new_extinf = f'{extinf_line} 🔴 {acara}'
+                                    new_extinf = f'{extinf_line} group-title="{kategori}", {judul}'
                                 
                                 channel_block[extinf_idx] = new_extinf
                                 
-                                # Tulis DRM (jika ada) dan info channel
+                                # Tulis lisensi DRM dan link final
                                 for block_line in channel_block:
                                     f.write(block_line + "\n")
-                                f.write(stream_url + "\n")
+                                f.write(link_final + "\n")
                             
-                            print(f" -> MATCH: '{m3u_channel_name}' punya {len(daftar_acara)} acara live/upcoming.")
-                            break # Lanjut ke channel M3U berikutnya
+                            break 
                             
                 channel_block = []
 
