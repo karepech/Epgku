@@ -9,40 +9,28 @@ import re
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/refs/heads/main/epg_wib_sports.xml"
 M3U_URL = "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"
 OUTPUT_FILE = "live_events.m3u"
-
-# Link video Standby/Trailer Anda
 LINK_STANDBY = "https://bwifi.my.id/live.mp4"
 
-# Kata kunci SUPER KETAT (Hanya Bola, Badminton, dan MotoGP)
-# Kata "vs" ditambahkan karena judul pertandingan bola/badminton sering kali hanya "Tim A vs Tim B"
-SPORT_KEYWORDS = [
-    # KATA KUNCI BOLA
-    "football", "soccer", "liga", "league", "premier", "champions", "uefa", "fifa", 
-    "afc", "bundesliga", "la liga", "serie a", "ligue 1", "eredivisie", "vs", "timnas", "fa cup", "copa",
-    # KATA KUNCI BADMINTON
-    "badminton", "bwf", "bulutangkis", "bulu tangkis", "thomas", "uber", "sudirman",
-    # KATA KUNCI MOTOGP
-    "motogp", "moto gp", "moto2", "moto3", "sprint race"
-]
-
 def get_wib_time():
-    """Waktu saat ini di WIB (+7)"""
     return datetime.utcnow() + timedelta(hours=7)
 
 def get_logical_date(dt):
-    """Ganti hari dihitung mulai jam 06:00 WIB pagi"""
     if dt.hour < 6:
         return (dt - timedelta(days=1)).date()
     return dt.date()
 
 def bersihkan_nama(nama):
-    """Pembersih nama untuk Auto-Match channel"""
     return re.sub(r'[^a-z0-9]', '', str(nama).lower())
 
-def is_target_sport(title):
-    """Mengecek apakah JUDUL ACARA mengandung kata kunci target"""
+def is_target_event(title):
+    """
+    FILTER SUPER KETAT:
+    Hanya menerima jika ada kata 'vs' (Bola/Badminton) atau 'motogp'
+    """
     if not title: return False
-    return any(k in title.lower() for k in SPORT_KEYWORDS)
+    t = title.lower()
+    # Cek apakah ada kata 'vs' yang berdiri sendiri atau kata 'motogp'
+    return re.search(r'\bvs\b', t) or "motogp" in t
 
 def main():
     print("1. Download EPG...")
@@ -61,7 +49,7 @@ def main():
         if disp is not None and disp.text:
             epg_channels_dict[ch_id] = disp.text.strip()
 
-    print("2. Mencari jadwal (Khusus Bola, Badminton, MotoGP)...")
+    print("2. Mencari jadwal (Hanya 'vs' dan 'motogp')...")
     now = get_wib_time()
     hari_ini_logis = get_logical_date(now)
     epg_events = {} 
@@ -77,14 +65,13 @@ def main():
         except ValueError:
             continue
 
-        # Filter 1: Ambil yang belum selesai (stop_dt > now)
         if stop_dt > now:
             ch_id = prog.get("channel")
             ch_name_epg = epg_channels_dict.get(ch_id, "")
             title = prog.findtext("title") or ""
             
-            # Filter 2: HANYA CEK JUDULNYA SAJA dengan kata kunci super ketat
-            if ch_name_epg and is_target_sport(title):
+            # CEK FILTER VS & MOTOGP
+            if ch_name_epg and is_target_event(title):
                 event_info = {
                     "title": title,
                     "start": start_dt,
@@ -104,7 +91,7 @@ def main():
         print(f"❌ Gagal download M3U: {e}")
         return
 
-    print("4. Meracik M3U (Auto-Match & Link Standby)...")
+    print("4. Meracik M3U Super Filter...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U name="🔴 LIVE & UPCOMING SPORTS"\n')
 
@@ -117,7 +104,6 @@ def main():
                 channel_block.append(line)
             elif line.startswith("http"):
                 stream_url_asli = line
-                
                 extinf_idx = -1
                 extinf_line = ""
                 for i, tag in enumerate(channel_block):
@@ -134,48 +120,33 @@ def main():
                         nama_epg_bersih = bersihkan_nama(epg_name)
                         
                         if nama_epg_bersih and nama_m3u_bersih and (nama_epg_bersih in nama_m3u_bersih or nama_m3u_bersih in nama_epg_bersih):
-                            
                             for acara in daftar_acara:
                                 start_dt = acara["start"]
+                                kategori = "🔴 LIVE HARI INI" if acara["logical_date"] == hari_ini_logis else "📅 UPCOMING SPORTS"
                                 
-                                # Kategori Hari
-                                if acara["logical_date"] == hari_ini_logis:
-                                    kategori = "🔴 LIVE HARI INI"
-                                else:
-                                    kategori = "📅 UPCOMING SPORTS"
-                                    
-                                # Logika Standby (Buka link asli 5 menit sebelum mulai)
                                 if now >= start_dt - timedelta(minutes=5):
                                     link_final = stream_url_asli
-                                    status_tayang = "[LIVE]"
+                                    status = "[LIVE]"
                                 else:
                                     link_final = LINK_STANDBY
-                                    status_tayang = "[STANDBY]"
+                                    status = "[STANDBY]"
                                     
-                                jam_mulai = start_dt.strftime("%H:%M")
-                                jam_selesai = acara["stop"].strftime("%H:%M")
-                                # Menambahkan WIB pada jam
-                                judul = f"🔴 {status_tayang} [{jam_mulai}-{jam_selesai} WIB] {acara['title']}"
+                                jam = f"{start_dt.strftime('%H:%M')}-{acara['stop'].strftime('%H:%M')} WIB"
+                                judul_final = f"🔴 {status} [{jam}] > {acara['title']}"
                                 
                                 parts = extinf_line.rsplit(',', 1)
                                 if len(parts) == 2:
                                     info_kiri = re.sub(r'group-title="[^"]*"', '', parts[0]).strip()
-                                    new_extinf = f'{info_kiri} group-title="{kategori}", {judul}'
-                                else:
-                                    new_extinf = f'{extinf_line} group-title="{kategori}", {judul}'
+                                    new_extinf = f'{info_kiri} group-title="{kategori}", {judul_final}'
+                                    channel_block[extinf_idx] = new_extinf
                                 
-                                channel_block[extinf_idx] = new_extinf
-                                
-                                # Tulis lisensi DRM dan link final
                                 for block_line in channel_block:
                                     f.write(block_line + "\n")
                                 f.write(link_final + "\n")
-                            
                             break 
-                            
                 channel_block = []
 
-    print(f"\nSELESAI ✔ → File '{OUTPUT_FILE}' sukses dibuat dan telah disaring ketat!")
+    print(f"\nSELESAI ✔ → File '{OUTPUT_FILE}' sudah difilter sangat ketat!")
 
 if __name__ == "__main__":
     main()
