@@ -5,67 +5,74 @@ from datetime import datetime, timedelta
 # ==========================================
 # KONFIGURASI LINK & FILE
 # ==========================================
-# Mengambil EPG yang sudah diproses oleh script Anda sebelumnya
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/refs/heads/main/epg_wib_sports.xml"
-# Link playlist M3U sumber
 M3U_URL = "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"
-# Nama file output (akan disimpan di folder yang sama dengan script ini)
 OUTPUT_FILE = "live_events.m3u"
 
 # ==========================================
-# MAPPING CHANNEL
-# Format: "ID/Nama di EPG" : "Kata kunci di M3U playlist25"
+# MAPPING CHANNEL BERDASARKAN "NAMA" EPG
+# KIRI: <display-name> di EPG
+# KANAN: Kata kunci pencarian di ujung M3U (setelah koma)
 # ==========================================
 MAPPING = {
-    "BeIN Sports 1": "BEIN SPORT 1",
-    "BeIN Sports 2": "BEIN SPORT 2",
-    "BeIN Sports 3": "BEIN SPORT 3",
+    "beIN Sports 1": "BEIN SPORTS 1",
+    "beIN Sports 2": "BEIN SPORTS 2",
+    "beIN Sports 3": "BEIN SPORTS 3",
     "SPOTV": "SPOTV",
     "SPOTV 2": "SPOTV 2",
-    # Tambahkan channel lain sesuai kebutuhan
+    # Tambahkan nama channel lain di sini
 }
 
 def get_wib_time():
-    # Ambil waktu UTC lalu tambah 7 jam untuk jadi WIB
     return datetime.utcnow() + timedelta(hours=7)
 
 def main():
-    print("1. Download EPG terbaru...")
+    print("1. Download EPG...")
     try:
         r_epg = requests.get(EPG_URL, timeout=30)
         r_epg.raise_for_status()
         root = ET.fromstring(r_epg.content)
     except Exception as e:
-        print(f"Gagal download/parsing EPG: {e}")
+        print(f"Gagal memuat EPG: {e}")
         return
 
-    print("2. Mencari acara yang sedang LIVE...")
+    # ========================================================
+    # KAMUS BARU: Terjemahkan ID EPG menjadi NAMA EPG
+    # ========================================================
+    epg_channels_dict = {}
+    for ch in root.findall("channel"):
+        ch_id = ch.get("id")
+        disp = ch.find("display-name")
+        if disp is not None and disp.text:
+            epg_channels_dict[ch_id] = disp.text.strip()
+
+    print("2. Mencari acara LIVE berdasarkan Nama Channel...")
     now = get_wib_time()
     live_programs = {}
 
     for prog in root.findall("programme"):
         start_str = prog.get("start")
         stop_str = prog.get("stop")
-        if not start_str or not stop_str:
-            continue
+        if not start_str or not stop_str: continue
 
         try:
-            # Format waktu EPG: YYYYMMDDHHMMSS
             start_dt = datetime.strptime(start_str[:14], "%Y%m%d%H%M%S")
             stop_dt = datetime.strptime(stop_str[:14], "%Y%m%d%H%M%S")
         except ValueError:
             continue
 
-        # Jika waktu sekarang (WIB) berada di antara jam mulai dan jam selesai
         if start_dt <= now <= stop_dt:
             ch_id = prog.get("channel")
+            # Ambil NAMA channel dari kamus yang kita buat tadi
+            ch_name_epg = epg_channels_dict.get(ch_id, "")
             title = prog.findtext("title") or "Live Event"
 
-            # Cocokkan dengan daftar MAPPING kita
+            # Cek apakah NAMA EPG ini ada di MAPPING kita
             for epg_key, m3u_keyword in MAPPING.items():
-                if epg_key.lower() in ch_id.lower():
+                # Bandingkan nama secara tidak case-sensitive
+                if epg_key.lower() == ch_name_epg.lower():
                     live_programs[m3u_keyword] = title
-                    print(f" -> LIVE: {title} (di {m3u_keyword})")
+                    print(f" -> LIVE DITEMUKAN: {title} (di {ch_name_epg})")
                     break
 
     print("3. Download M3U playlist25...")
@@ -77,29 +84,55 @@ def main():
         print(f"Gagal download M3U: {e}")
         return
 
-    print("4. Membuat file M3U Live Event...")
+    print("4. Membuat M3U Live Event (Mendukung DRM/Kodi/VLC)...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U name="🔴 LIVE SPORTS"\n')
 
-        current_extinf = ""
+        # List untuk mengumpulkan semua baris milik 1 channel
+        channel_block = [] 
+        
         for line in m3u_lines:
             line = line.strip()
-            if line.startswith("#EXTINF"):
-                current_extinf = line
-            elif line.startswith("http") and current_extinf:
+            if not line: continue
+
+            if line.startswith("#"):
+                # Masukkan EXTINF, KODIPROP, EXTVLCOPT ke dalam blok
+                channel_block.append(line)
+            elif line.startswith("http"):
                 stream_url = line
-
-                # Cek apakah channel ini sedang live
-                for keyword, event_title in live_programs.items():
-                    if keyword.lower() in current_extinf.lower():
-                        # Buat baris baru khusus Live Event
-                        f.write(f'#EXTINF:-1 group-title="🔴 LIVE EVENT", 🔴 [LIVE] {event_title}\n')
-                        f.write(f'{stream_url}\n')
+                
+                # Cari baris mana yang merupakan #EXTINF di dalam blok
+                extinf_idx = -1
+                extinf_line = ""
+                for i, tag in enumerate(channel_block):
+                    if tag.startswith("#EXTINF"):
+                        extinf_idx = i
+                        extinf_line = tag
                         break
+                
+                if extinf_idx != -1:
+                    # Cek apakah channel ini masuk jadwal Live
+                    for keyword, event_title in live_programs.items():
+                        if keyword.lower() in extinf_line.lower():
+                            # Ganti judul acara di ujung baris EXTINF
+                            parts = extinf_line.rsplit(',', 1)
+                            if len(parts) == 2:
+                                new_extinf = f'{parts[0]} group-title="🔴 LIVE EVENT",🔴 [LIVE] {event_title}'
+                            else:
+                                new_extinf = f'{extinf_line} 🔴 [LIVE] {event_title}'
+                            
+                            channel_block[extinf_idx] = new_extinf
+                            
+                            # Tulis SEMUA baris (termasuk DRM) ke file M3U baru
+                            for block_line in channel_block:
+                                f.write(block_line + "\n")
+                            f.write(stream_url + "\n")
+                            break
+                            
+                # Bersihkan blok untuk mulai membaca channel berikutnya
+                channel_block = []
 
-                current_extinf = ""
-
-    print(f"SELESAI ✔ → {OUTPUT_FILE} berhasil dibuat!")
+    print(f"SELESAI ✔ → {OUTPUT_FILE} siap digunakan!")
 
 if __name__ == "__main__":
     main()
