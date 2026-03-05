@@ -6,45 +6,41 @@ import gzip
 import io
 
 # ==========================================
-# KONFIGURASI LINK & FILE
+# KONFIGURASI
 # ==========================================
 EPG_URL = "https://iptv-org.github.io/epg/guides/sg/starhubtvplus.com.epg.xml" 
 M3U_URL = "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"
 OUTPUT_FILE = "live_events.m3u"
 LINK_STANDBY = "https://bwifi.my.id/live.mp4"
 
-# ==========================================
-# PENGATURAN FILTER KETAT
-# ==========================================
-# Tambahan kata: rpt, repeat, encore, rewind
 REPLAY_KEYWORDS = ["highlight", "replay", "classic", "best of", "re-run", "siaran ulang", "magazine", "preview", "review", "delay", "encore", "rpt", "repeat", "rewind"]
-
 TARGET_SPORTS = ["motogp", "moto2", "moto3", "badminton", "bwf", "futsal", "voli", "volley", "basket", "nba", "fiba"]
 SPORTS_CHANNELS = ["sport", "bein", "spotv", "champions", "premier", "euro", "hub", "arena", "astro"]
+
+# Daftar Liga Eropa untuk aturan "Jam Haram"
+EURO_LEAGUES = ["premier", "laliga", "la liga", "bundesliga", "serie a", "ligue", "champions", "europa", "eredivisie", "scottish"]
 
 def is_sports_channel(channel_name):
     if not channel_name: return False
     return any(k in channel_name.lower() for k in SPORTS_CHANNELS)
 
-def is_fresh_live(prog):
-    """
-    FILTER TINGKAT DEWA:
-    1. Mengecek kode tersembunyi <previously-shown> dari EPG
-    2. Mengecek blokir kata kunci
-    """
-    # 1. CEK METADATA TERSEMBUNYI (Jika ada tag ini, 100% Siaran Ulang!)
+def is_fresh_live(prog, start_wib):
+    """Filter Ekstra Ketat dengan Logika Waktu Benua Eropa"""
     if prog.find("previously-shown") is not None:
         return False
 
-    # Mengambil judul
     title = prog.findtext("title") or ""
     if not title: return False
     t = title.lower()
     
-    # 2. BLOKIR KATA KUNCI
     if any(k in t for k in REPLAY_KEYWORDS): return False
-    
-    # 3. LOLOS JIKA FORMAT MATCH / TARGET SPORT
+
+    # ATURAN JAM HARAM LIGA EROPA: 
+    # Mustahil ada live Liga Eropa antara jam 06:00 Pagi sampai 17:00 Sore WIB
+    is_daytime_wib = 6 <= start_wib.hour < 17
+    if is_daytime_wib and any(liga in t for liga in EURO_LEAGUES):
+        return False # Langsung tendang, ini 100% siaran ulang siang bolong
+
     return bool(re.search(r'\bvs\b', t)) or any(sport in t for sport in TARGET_SPORTS)
 
 def parse_to_wib(time_str):
@@ -58,8 +54,13 @@ def parse_to_wib(time_str):
     except:
         return None
 
+def extract_channel_number(name):
+    """Mengekstrak angka dari nama channel untuk mencegah BeIN 1 masuk ke BeIN 2"""
+    match = re.search(r'\d+', name)
+    return match.group() if match else ""
+
 def main():
-    print(f"1. Download EPG...")
+    print("1. Download EPG...")
     try:
         r = requests.get(EPG_URL, timeout=60)
         r.raise_for_status()
@@ -68,7 +69,7 @@ def main():
             content = gzip.GzipFile(fileobj=io.BytesIO(content)).read()
         root = ET.fromstring(content)
     except Exception as e:
-        print(f"❌ Gagal memuat EPG: {e}")
+        print(f"❌ Gagal: {e}")
         return
 
     epg_channels_dict = {}
@@ -77,15 +78,13 @@ def main():
         if ch_name and is_sports_channel(ch_name.strip()):
             epg_channels_dict[ch.get("id")] = ch_name.strip()
 
-    print("2. Mencari Acara LIVE Murni (Membaca Metadata Tersembunyi)...")
+    print("2. Mencari Acara LIVE Asli (Menyaring Replay Siang Hari)...")
     now_wib = datetime.utcnow() + timedelta(hours=7)
     live_events = {} 
 
     for prog in root.findall("programme"):
-        start_str, stop_str = prog.get("start"), prog.get("stop")
-        
-        start_wib = parse_to_wib(start_str)
-        stop_wib = parse_to_wib(stop_str)
+        start_wib = parse_to_wib(prog.get("start"))
+        stop_wib = parse_to_wib(prog.get("stop"))
         if not start_wib or not stop_wib: continue
 
         if start_wib - timedelta(minutes=5) <= now_wib <= stop_wib:
@@ -93,18 +92,19 @@ def main():
             ch_name_epg = epg_channels_dict.get(ch_id)
             if not ch_name_epg: continue
 
-            # Memasukkan seluruh data 'prog' ke filter, bukan cuma judulnya
-            if is_fresh_live(prog):
+            # Masukkan start_wib ke filter untuk cek "Jam Haram"
+            if is_fresh_live(prog, start_wib):
                 title = prog.findtext("title") or ""
+                # Mencegah duplikat acara di EPG yang sama
                 live_events[ch_name_epg] = {"title": title, "start": start_wib, "stop": stop_wib}
 
-    print("\n3. Membaca playlist25 Anda...")
+    print("\n3. Membaca playlist25...")
     try:
         r_m3u = requests.get(M3U_URL, timeout=30)
         m3u_lines = r_m3u.text.splitlines()
     except: return
 
-    print("4. Meracik M3U Khusus LIVE...")
+    print("4. Meracik M3U Tanpa Channel Kembar...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U name="🔴 PURE LIVE SPORTS"\n')
         channel_block = [] 
@@ -115,12 +115,16 @@ def main():
                 stream_asli = line
                 extinf = next((t for t in channel_block if t.startswith("#EXTINF")), "")
                 if extinf:
-                    m3u_name = re.sub(r'[^a-z0-9]', '', extinf.split(',')[-1].lower())
+                    m3u_name_clean = re.sub(r'[^a-z0-9]', '', extinf.split(',')[-1].lower())
+                    m3u_number = extract_channel_number(m3u_name_clean)
                     
                     for epg_name, acr in live_events.items():
-                        epg_clean = re.sub(r'[^a-z0-9]', '', epg_name.lower())
+                        epg_name_clean = re.sub(r'[^a-z0-9]', '', epg_name.lower())
+                        epg_number = extract_channel_number(epg_name_clean)
                         
-                        if epg_clean in m3u_name or m3u_name in epg_clean:
+                        # KUNCI ANGKA: Hanya cocokkan jika namanya mirip DAN angkanya sama persis!
+                        if (epg_name_clean in m3u_name_clean or m3u_name_clean in epg_name_clean) and (m3u_number == epg_number):
+                            
                             if now_wib >= acr["start"] - timedelta(minutes=2):
                                 link_final = stream_asli
                                 status_tag = "[LIVE]"
@@ -139,7 +143,7 @@ def main():
                             f.write(link_final + "\n")
                             break 
                 channel_block = []
-    print(f"SELESAI ✔ → '{OUTPUT_FILE}' sukses difilter dari siaran ulang!")
+    print(f"SELESAI ✔ → Bersih dari siaran siang palsu & channel dobel!")
 
 if __name__ == "__main__":
     main()
