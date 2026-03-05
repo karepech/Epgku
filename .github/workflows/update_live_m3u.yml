@@ -2,7 +2,10 @@ name: Generate LIVE EVENT M3U
 
 on:
   schedule:
+    # Mengecek jadwal setiap 15 menit agar fitur Standby & Auto-Switch berjalan presisi
     - cron: "*/15 * * * *"
+  # Memungkinkan Anda menjalankan script secara manual lewat tombol di GitHub
+  workflow_dispatch:
 
 jobs:
   update-live:
@@ -21,7 +24,7 @@ jobs:
         run: |
           pip install requests
 
-      - name: Jalankan Script Live M3U (Auto-Match)
+      - name: Jalankan Script Live M3U (Auto-Match & Standby Logic)
         run: |
           cd live_event
           python generate_live.py
@@ -31,5 +34,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add live_event/live_events.m3u
-          git commit -m "Auto update 🔴 LIVE SPORTS M3U (Setiap 12 Jam)" || echo "Tidak ada perubahan file"
+          git commit -m "Auto update 🔴 LIVE & UPCOMING M3U (15 Menit)" || echo "Tidak ada perubahan file"
           git push
