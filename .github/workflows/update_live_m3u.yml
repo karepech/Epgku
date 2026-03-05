@@ -1,0 +1,38 @@
+name: Generate LIVE EVENT M3U
+
+on:
+  schedule:
+    # Berjalan setiap 30 menit sekali agar cepat mendeteksi pertandingan baru
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update-live:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+
+      - name: Jalankan Script Live M3U
+        # Pindah ke folder live_event lalu jalankan script
+        run: |
+          cd live_event
+          python generate_live.py
+
+      - name: Commit & Push File M3U
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add live_event/live_events.m3u
+          git commit -m "Auto update 🔴 LIVE SPORTS M3U" || echo "Tidak ada perubahan live event"
+          git push
