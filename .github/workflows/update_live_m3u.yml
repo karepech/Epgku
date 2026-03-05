@@ -2,9 +2,7 @@ name: Generate LIVE EVENT M3U
 
 on:
   schedule:
-    # Berjalan otomatis setiap 12 jam (menit ke-0 pada interval 12 jam)
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
+    - cron: "*/15 * * * *"
 
 jobs:
   update-live:
