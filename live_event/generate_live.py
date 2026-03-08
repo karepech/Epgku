@@ -9,7 +9,7 @@ import io
 # KONFIGURASI
 # ==========================================
 EPG_URL = "https://iptv-org.github.io/epg/guides/sg/starhubtvplus.com.epg.xml" 
-M3U_URL = "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"
+M3U_URL = "https://raw.githubusercontent.com/karepech/Karepetv/refs/heads/main/sports_combined.m3u5"
 OUTPUT_FILE = "live_events.m3u"
 LINK_STANDBY = "https://bwifi.my.id/live.mp4"
 
@@ -97,27 +97,52 @@ def main():
                 title = prog.findtext("title") or ""
                 live_events[ch_name_epg] = {"title": title, "start": start_wib, "stop": stop_wib}
 
-    print("\n3. Membaca playlist25...")
+    print("\n3. Membaca playlist M3U...")
     try:
         r_m3u = requests.get(M3U_URL, timeout=30)
         m3u_lines = r_m3u.text.splitlines()
-    except: return
+    except Exception as e:
+        print(f"❌ Gagal membaca M3U: {e}")
+        return
 
-    print("4. Meracik M3U...")
+    print("4. Meracik M3U (Strict Full-Block Mode)...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U name="🔴 PURE LIVE SPORTS"\n')
         
         channel_block = [] 
-        jumlah_channel_dibuat = 0 # Variabel untuk menghitung channel yang berhasil masuk
+        jumlah_channel_dibuat = 0
         
         for line in m3u_lines:
-            if not (line := line.strip()): continue
-            if line.startswith("#"): channel_block.append(line)
-            elif line.startswith("http"):
+            line = line.strip()
+            if not line: continue
+            
+            # Abaikan tag EXTM3U global agar tidak masuk ke blok channel dan bikin error
+            if line.upper().startswith("#EXTM3U"):
+                continue
+
+            if line.startswith("#"): 
+                channel_block.append(line)
+            else:
+                # Jika baris ini bukan "#" (berarti ini link streaming), proses blok yang terkumpul
                 stream_asli = line
-                extinf = next((t for t in channel_block if t.startswith("#EXTINF")), "")
-                if extinf:
-                    m3u_name_asli = extinf.split(',')[-1].strip()
+                
+                # Cari baris mana di dalam block yang merupakan #EXTINF
+                extinf_idx = -1
+                for i, tag in enumerate(channel_block):
+                    if tag.upper().startswith("#EXTINF"):
+                        extinf_idx = i
+                        break
+                        
+                if extinf_idx != -1:
+                    extinf = channel_block[extinf_idx]
+                    
+                    # Pemisahan nama channel menggunakan split(",", 1) agar aman dari nama yang mengandung koma
+                    if "," in extinf:
+                        extinf_attrs, m3u_name_asli = extinf.split(",", 1)
+                        m3u_name_asli = m3u_name_asli.strip()
+                    else:
+                        extinf_attrs = extinf
+                        m3u_name_asli = ""
                     
                     if is_sports_channel(m3u_name_asli):
                         m3u_name_clean = re.sub(r'[^a-z0-9]', '', m3u_name_asli.lower())
@@ -138,16 +163,21 @@ def main():
                                 jam = f"{acr['start'].strftime('%H:%M')}-{acr['stop'].strftime('%H:%M')} WIB"
                                 judul_baru = f"🔴 {status_tag} {acr['title']} ({jam})"
                                 
-                                clean_extinf = re.sub(r'group-title="[^"]*"', '', extinf.rsplit(',', 1)[0]).strip()
-                                f.write(f'{clean_extinf} group-title="🔴 LIVE SEKARANG", {judul_baru}\n')
+                                # Hapus group-title lama dan masukkan yang baru tanpa merusak atribut lain (tvg-id, logo, dll)
+                                clean_attrs = re.sub(r'\s*group-title="[^"]*"', '', extinf_attrs).strip()
                                 
-                                for blk in [b for b in channel_block if not b.startswith("#EXTINF")]: 
+                                # Timpa/update baris EXTINF di dalam blok
+                                channel_block[extinf_idx] = f'{clean_attrs} group-title="🔴 LIVE SEKARANG",{judul_baru}'
+                                
+                                # Tulis SATU BLOK UTUH TANPA TERKECUALI (termasuk tag ekstensi lain jika ada)
+                                for blk in channel_block:
                                     f.write(blk + "\n")
                                 f.write(link_final + "\n")
                                 
-                                jumlah_channel_dibuat += 1 # Tambah 1 jika ada pertandingan yang berhasil masuk
+                                jumlah_channel_dibuat += 1 
                                 break 
                                 
+                # Reset blok untuk membaca channel selanjutnya
                 channel_block = []
                 
         # ==========================================
@@ -155,7 +185,6 @@ def main():
         # ==========================================
         if jumlah_channel_dibuat == 0:
             print("ℹ️ Tidak ada jadwal live, membuat Channel Info Fallback...")
-            # Buat 1 channel pemberitahuan agar link M3U tidak dianggap error
             f.write('#EXTINF:-1 tvg-id="" tvg-name="INFO" tvg-logo="" group-title="ℹ️ INFORMASI", ℹ️ BELUM ADA SIARAN LIVE SAAT INI\n')
             f.write(f'{LINK_STANDBY}\n')
 
